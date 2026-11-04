@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设备运维助手 · 产线监控台</title>
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+<!-- ===== 顶部状态条：一句话总览 + 当前时间；报警时整条变红 ===== -->
+<header id="topbar" class="topbar" data-worst="normal">
+  <div class="topbar-left">
+    <span class="brand">产线监控台</span>
+    <span id="lineSummary" class="line-summary">正在连接数据…</span>
+  </div>
+  <div class="topbar-right">
+    <nav class="viewnav">
+      <button id="navDashboard" class="navbtn active" type="button">监控</button>
+      <button id="navHistory" class="navbtn" type="button">历史</button>
+      <button id="navInsights" class="navbtn" type="button">经验</button>
+    </nav>
+    <label id="demoToggleWrap" class="demo-toggle">
+      <input type="checkbox" id="demoToggle" />
+      <span>演示模式</span>
+    </label>
+    <span id="clock" class="clock">--:--:--</span>
+  </div>
+</header>
+
+<!-- 数据连接中断提示：接口异常时置顶显示，同时清空所有数值 -->
+<div id="connBanner" class="conn-banner" hidden>
+  ⚠ 数据连接中断：已停止显示实时数据（不显示过期数值）。正在重试…
+</div>
+
+<!-- ===== 演示模式注入面板：仅在开关打开时渲染，关闭时 DOM 里不存在 ===== -->
+<section id="demoPanel" class="demo-panel" hidden>
+  <div class="demo-title">🧪 演示模式 · 故障注入<span class="demo-note">（只改仿真器自身数据，不下发任何控制指令）</span></div>
+  <div class="demo-form">
+    <label>设备
+      <select id="demoDevice"></select>
+    </label>
+    <label>故障类型
+      <select id="demoFault"></select>
+    </label>
+    <button id="demoInject" class="btn btn-warn big" type="button">注入故障</button>
+    <button id="demoRecover" class="btn btn-ghost big" type="button">全部恢复</button>
+    <span id="demoState" class="demo-state">当前无注入</span>
+  </div>
+</section>
+
+<!-- ===== 主视图：监控（左侧紧凑设备列表 + 右侧诊断区） ===== -->
+<main id="viewDashboard" class="layout">
+  <aside class="col-devices">
+    <!-- 列表头 + 筛选条：不随列表滚动 -->
+    <div class="list-header">
+      <h2 class="col-title">设备状态<span class="col-sub" id="deviceRefreshHint">每 2 秒刷新</span></h2>
+      <div id="listSummary" class="list-summary">正在连接数据…</div>
+    </div>
+    <div class="list-filter" id="listFilter">
+      <div class="filter-chips" id="filterChips">
+        <button type="button" class="fchip active" data-filter="all">全部 <span class="fcount" id="cntAll">0</span></button>
+        <button type="button" class="fchip fchip-alarm" data-filter="alarm">只看报警 <span class="fcount" id="cntAlarm">0</span></button>
+        <button type="button" class="fchip fchip-warn" data-filter="warn">只看预警 <span class="fcount" id="cntWarn">0</span></button>
+        <button type="button" class="fchip fchip-ok" data-filter="normal">只看正常 <span class="fcount" id="cntNormal">0</span></button>
+      </div>
+      <input id="deviceSearch" class="device-search" type="search"
+             placeholder="搜索设备编号 / 名称" autocomplete="off" />
+    </div>
+    <!-- 摘要行列表：独立滚动；每行固定行高，设备再多也不缩放、不分页 -->
+    <div id="deviceList" class="device-list" role="listbox" aria-label="设备摘要列表"></div>
+  </aside>
+
+  <section class="col-main">
+    <!-- 故障描述输入区 -->
+    <div class="panel input-panel">
+      <h2 class="panel-title">这台机器怎么了？说大白话就行</h2>
+      <div class="input-row">
+        <input id="queryInput" class="query-input" type="text"
+               placeholder="描述一下哪台机器怎么了，例如：二号机声音不对还发烫" />
+        <button id="micBtn" class="btn btn-mic" type="button" title="语音输入" hidden>🎤</button>
+        <button id="askBtn" class="btn btn-primary big" type="button">诊断</button>
+      </div>
+      <div id="micHint" class="mic-hint" hidden>正在听…请说话</div>
+      <div class="chips">
+        <span class="chips-label">常见情况：</span>
+        <button class="chip" type="button" data-word="声音不对">声音不对</button>
+        <button class="chip" type="button" data-word="发烫">发烫</button>
+        <button class="chip" type="button" data-word="报警了">报警了</button>
+        <button class="chip" type="button" data-word="漏油">漏油</button>
+        <button class="chip" type="button" data-word="不启动">不启动</button>
+        <button class="chip" type="button" data-word="气压低">气压低</button>
+      </div>
+    </div>
+
+    <!-- 诊断报告区 -->
+    <div id="reportArea" class="panel report-area">
+      <div class="empty-state">
+        <div class="empty-icon">🛠</div>
+        <div class="empty-text">先从左边选一台设备有问题，或在上面描述现象，点「诊断」。</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== 设备详情抽屉：点击摘要行从右侧滑出；遮罩点击 / Esc / 关闭按钮均可关 ===== -->
+<div id="drawerMask" class="drawer-mask" hidden></div>
+<aside id="deviceDrawer" class="drawer" hidden role="dialog" aria-modal="true" aria-label="设备详情">
+  <div class="drawer-head">
+    <div class="drawer-title">
+      <span id="drawerDot" class="dr-dot sev-normal-dot"></span>
+      <span id="drawerDevId" class="drawer-dev-id">--</span>
+      <span id="drawerDevName" class="drawer-dev-name"></span>
+      <span id="drawerStatus" class="drawer-status">--</span>
+    </div>
+    <button id="drawerClose" class="btn btn-ghost drawer-close" type="button">✕ 关闭</button>
+  </div>
+  <div class="drawer-sub" id="drawerSub"></div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <button id="drawerAsk" class="btn btn-primary big" type="button">💬 对该设备提问诊断</button>
+  </div>
+</aside>
+
+<!-- ===== 历史视图 ===== -->
+<main id="viewHistory" class="layout-single" hidden>
+  <section class="panel">
+    <h2 class="panel-title">运维历史记录</h2>
+    <div class="history-filter">
+      <label>设备
+        <select id="historyDevice"><option value="">全部</option></select>
+      </label>
+      <label>结果
+        <select id="historyResult">
+          <option value="">全部</option>
+          <option value="已解决">已解决</option>
+          <option value="未解决">未解决</option>
+          <option value="未反馈">未反馈</option>
+        </select>
+      </label>
+      <label class="grow">关键字
+        <input id="historyKeyword" type="text" placeholder="搜设备、现象或结论" />
+      </label>
+      <button id="historyRefresh" class="btn btn-ghost big" type="button">刷新</button>
+      <span class="export-group" title="导出当前筛选结果，供工厂老板看停机与故障统计">
+        <button id="exportCsvHistory" class="btn btn-ghost big" type="button">⬇ 导出 CSV</button>
+        <button id="exportXlsxHistory" class="btn btn-ghost big" type="button">⬇ 导出 Excel</button>
+      </span>
+    </div>
+    <div id="historyCount" class="history-count">共 0 条</div>
+    <div id="historyList" class="history-list"></div>
+  </section>
+</main>
+
+<!-- ===== 经验沉淀视图：高频故障 / 平均处理时长 / 复发提醒 / 导出 ===== -->
+<main id="viewInsights" class="layout-single" hidden>
+  <section class="panel">
+    <h2 class="panel-title">经验沉淀 · 运维复盘
+      <span class="col-sub">数据来自运维记忆库：按设备统计高频故障与平均处理时长；同设备 30 天内同故障 ≥2 次自动提醒</span>
+    </h2>
+    <div class="history-filter">
+      <label>工厂
+        <select id="insightFactory"><option value="">全部</option></select>
+      </label>
+      <label>统计窗口
+        <select id="insightDays">
+          <option value="30">近 30 天</option>
+          <option value="90" selected>近 90 天</option>
+          <option value="365">近一年</option>
+        </select>
+      </label>
+      <button id="insightRefresh" class="btn btn-ghost big" type="button">刷新</button>
+      <span class="export-group" title="按当前工厂/窗口导出，Excel 含明细与统计两张表">
+        <button id="exportCsvInsight" class="btn btn-ghost big" type="button">⬇ 导出 CSV</button>
+        <button id="exportXlsxInsight" class="btn btn-ghost big" type="button">⬇ 导出 Excel</button>
+      </span>
+    </div>
+    <div id="insightSummary" class="insight-summary"></div>
+    <div id="insightRecurrence" class="insight-recurrence"></div>
+    <div id="insightDevices" class="insight-devices"></div>
+  </section>
+</main>
+
+<!-- ===== 知识库条目详情弹层（点击故障编号角标） ===== -->
+<div id="kbModal" class="modal" hidden>
+  <div class="modal-box">
+    <div class="modal-head">
+      <span id="kbModalCode" class="kb-badge big">F000</span>
+      <span id="kbModalTitle" class="modal-title">条目详情</span>
+      <button id="kbModalClose" class="btn btn-ghost modal-close" type="button">关闭</button>
+    </div>
+    <div id="kbModalBody" class="modal-body"></div>
+  </div>
+</div>
+
+<!-- ===== 排查模式：全屏单步 ===== -->
+<div id="stepMode" class="step-mode" hidden>
+  <div class="step-head">
+    <span id="stepProgress" class="step-progress">第 1 步 / 共 1 步</span>
+    <span id="stepDevice" class="step-device"></span>
+  </div>
+  <div id="stepSafetyTop" class="step-safety-top" hidden>
+    ⚠ 本步骤涉及危险作业，必须由专业工程师执行
+  </div>
+  <div id="stepBody" class="step-body"></div>
+  <div class="step-actions">
+    <button id="stepPrev" class="btn btn-ghost huge" type="button">⬅ 上一步</button>
+    <button id="stepNext" class="btn btn-primary huge" type="button">✅ 完成，下一步</button>
+    <button id="stepExit" class="btn btn-danger huge" type="button">✖ 退出排查</button>
+  </div>
+</div>
+
+<!-- ===== L3 安全确认弹层 ===== -->
+<div id="safeModal" class="modal" hidden>
+  <div class="modal-box danger">
+    <div class="modal-head">
+      <span class="kb-badge big danger">🔴 L3</span>
+      <span class="modal-title">安全确认</span>
+    </div>
+    <div class="modal-body">
+      <p class="safe-lead" id="safeLead">该步骤涉及高压/拆机，需工程师执行并确认安全措施。</p>
+      <ul class="safe-list" id="safeList"></ul>
+      <div class="safe-signal-note" id="safeSignalNote">
+        ⚠ 系统未接入设备主电源 / 挂锁状态信号，无法检测是否真的断电。以下为现场人员人工确认，确认人与时间将记入运维记录；物理安全由设备侧硬回路与现场 LOTO 规程承担。
+      </div>
+      <label class="safe-check">
+        <input type="checkbox" id="safeAck" />
+        <span>我已断电挂牌上锁（LOTO），并由持证人员到场（人工确认，非系统检测）</span>
+      </label>
+      <label class="safe-ack-by">确认人（姓名/工号，必填）
+        <input type="text" id="safeAckBy" placeholder="持证人员姓名/工号（必填，记入运维记录）" autocomplete="off" />
+      </label>
+    </div>
+    <div class="modal-foot">
+      <button id="safeCancel" class="btn btn-ghost big" type="button">返回上一步</button>
+      <button id="safeConfirm" class="btn btn-danger big" type="button" disabled>已确认安全，进入本步</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 轻提示 ===== -->
+<div id="toast" class="toast" hidden></div>
+
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/history.js"></script>
+<script src="js/insights.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

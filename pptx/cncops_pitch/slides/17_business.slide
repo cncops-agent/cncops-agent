@@ -1,0 +1,40 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 04</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>商业模式（SaaS 订阅）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>BUSINESS</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'center', gap:18 }}>
+    <Box style={{ flexDirection:'row', gap:24 }}>
+      <Box style={{ flex:1, flexDirection:'column', padding:'22px 22px', background:'rgba(255,255,255,0.04)', borderRadius:14, border:'1px solid rgba(255,255,255,0.10)' }}>
+        <Text style={{ fontSize:22, color:'#E6EEF5', fontWeight:'bold' }}>免费版</Text>
+        <Text style={{ fontSize:30, color:'#8FA3B8', fontWeight:'bold', marginTop:6 }}>≤5 台</Text>
+        <Text style={{ fontSize:15, color:'#9FB6CC', lineHeight:1.6, marginTop:10 }}>· 10 秒看报警<Text style={{ display:'block' }} />· 基础诊断能力</Text>
+        <Text style={{ fontSize:13, color:'#8FA3B8', marginTop:10 }}>获客入口</Text>
+      </Box>
+      <Box style={{ flex:1, flexDirection:'column', padding:'22px 22px', background:'rgba(34,211,238,0.10)', borderRadius:14, border:'2px solid #22D3EE' }}>
+        <Text style={{ fontSize:22, color:'#22D3EE', fontWeight:'bold' }}>专业版 · 主力</Text>
+        <Text style={{ fontSize:30, color:'#22D3EE', fontWeight:'bold', marginTop:6 }}>¥6,800 / 年起</Text>
+        <Text style={{ fontSize:15, color:'#CDE6F5', lineHeight:1.6, marginTop:10 }}>· 自定义知识库<Text style={{ display:'block' }} />· 完整台账与导出<Text style={{ display:'block' }} />· 经验沉淀与复发提醒</Text>
+        <Text style={{ fontSize:13, color:'#22D3EE', marginTop:10 }}>续费核心：经验资产</Text>
+      </Box>
+      <Box style={{ flex:1, flexDirection:'column', padding:'22px 22px', background:'rgba(255,255,255,0.04)', borderRadius:14, border:'1px solid rgba(255,255,255,0.10)' }}>
+        <Text style={{ fontSize:22, color:'#E6EEF5', fontWeight:'bold' }}>企业版</Text>
+        <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold', marginTop:6 }}>¥30,000 / 年起</Text>
+        <Text style={{ fontSize:15, color:'#9FB6CC', lineHeight:1.6, marginTop:10 }}>· 私有化 LLM<Text style={{ display:'block' }} />· 多租户管理<Text style={{ display:'block' }} />· 数据不出厂</Text>
+        <Text style={{ fontSize:13, color:'#8FA3B8', marginTop:10 }}>大型 / 集团客户</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12 }}>
+      <FAIcon name='arrow-right' style={{ fill:'#22D3EE', width:20, height:20 }} />
+      <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>转化路径：免费版用"10 秒看报警"留住操作工 → 30 天历史用完时厂长已在经验页看到停机账 → 升级专业版。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>17 / 20</Text>
+  </Box>
+</Slide>

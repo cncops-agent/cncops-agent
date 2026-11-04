@@ -1,0 +1,49 @@
+覆盖率实测存档（2026-10-25 返工轮：为当前变更补充 API 契约测试后测量）
+⚠ 当前状态提示（2026-11-04）：本存档 82/82 为当时轮次实测，按事实保留不改；当前 selftest 为 88/88、pytest 27 passed（新增 M 段 L3 服务端强制闸门 6 项），最新输出见 docs/selftest_output.txt。L3 确认为人工署名 + 服务端强制校验 + 落库留痕，不是设备断电检测。
+================================================================
+测量工具：coverage.py 7.17.0（装入受管运行时隔离环境，未改动项目依赖）
+测量命令（本项目根目录）：
+  python -m coverage run --source=src/cncops -m pytest tests -q     # 27 passed
+  python -m coverage run --append --source=src/cncops tests/selftest.py   # 82/82
+  python -m coverage report -m
+口径说明：
+- 分子分母为 Python 语句行（coverage 默认语句覆盖，未开分支覆盖）；
+- 合并数字 = pytest 27 项 + selftest 82 项一次会话内累计（--append）；
+- selftest D/J 段的子进程加载（devices_30 等）不计入本数字（子进程覆盖率需额外配置），
+  故实际覆盖略高于本表；
+- 仅 pytest 套件单独测量：TOTAL 66%、api.py 45%（HTTP 面由 selftest 覆盖，分层所致）。
+本轮变更的覆盖证据（src/cncops/api.py）：
+- L333 diagnose 响应 "llm_used"：位于 L322 return 字典语句内 → EXECUTED
+- L707 历史详情序列化 "llm_used"：位于 L692 return 字典语句内 → EXECUTED
+- 覆盖用例：tests/test_api_contract.py（7 项，规则/增强/不变量/历史详情往返/原因排序契约/未覆盖通用原因）
+前端变更（web/static/js/ui.js 原因排序块 + app.css）不由 coverage.py 计量，
+其证据为 scripts/shot_diagnosis.py 的 .cause-row DOM 断言（15/15，docs/shot_diagnosis_output.txt）。
+说明：本项目未设覆盖率门禁（门槛属项目决策，未经授权不设定）；本报告为度量证据，非放行条件。
+----------------------------------------------------------------
+Name                         Stmts   Miss  Cover   Missing
+----------------------------------------------------------
+src\cncops\__init__.py           1      0   100%
+src\cncops\__main__.py           4      4     0%   1-5
+src\cncops\agent.py            249     17    93%   99-101, 109-110, 171, 174-175, 181, 184, 211, 336-337, 346, 372-374
+src\cncops\api.py              379     31    92%   80, 87, 201, 208, 229, 370, 378, 490, 511, 522, 532, 541, 569, 587, 602-603, 636, 679, 686, 802, 824, 829-830, 839-849, 857, 860
+src\cncops\catalog.py           88      5    94%   59, 62, 65-66, 136
+src\cncops\cli.py               92     92     0%   3-128
+src\cncops\config.py            81     15    81%   30-37, 47-48, 103-105, 109, 146
+src\cncops\datasource.py        58      8    86%   29, 55-60, 68
+src\cncops\export.py            39      0   100%
+src\cncops\knowledge.py        192      6    97%   164, 181, 198, 245, 251, 254
+src\cncops\llm_client.py        83     59    29%   42-44, 48-59, 64-83, 87-90, 94-107, 112-122
+src\cncops\memory.py           298     33    89%   126, 138, 153-154, 174, 263-264, 271-272, 293-294, 299-302, 341-342, 348-349, 382-383, 586, 588, 593, 614, 616-620, 647-650, 653
+src\cncops\monitor.py           43      4    91%   44-45, 51, 83
+src\cncops\opcua_client.py      35      4    89%   28, 36, 39-40
+src\cncops\opcua_server.py      61      3    95%   35, 39, 82
+src\cncops\parser.py            52      0   100%
+src\cncops\paths.py             19      4    79%   18-19, 33-34
+src\cncops\render.py            93     22    76%   37, 39-42, 58-60, 74, 79, 84, 99, 108, 113-118, 122-125, 131
+src\cncops\rules.py            118      5    96%   64, 71, 95, 101, 130
+src\cncops\safety.py            29      0   100%
+src\cncops\simulator.py         78      4    95%   61, 82, 85, 87
+src\cncops\tools.py             51      7    86%   31, 35, 47, 61-62, 71-72
+src\cncops\xlsx.py              73      2    97%   45, 122
+----------------------------------------------------------
+TOTAL                         2216    325    85%

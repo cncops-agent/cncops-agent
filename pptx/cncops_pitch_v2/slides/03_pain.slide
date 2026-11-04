@@ -1,0 +1,52 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 01</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>核心痛点 · 行业账本</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>WHY</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:22, padding:'22px 28px', background:'rgba(34,211,238,0.08)', borderRadius:14, border:'1px solid rgba(34,211,238,0.35)' }}>
+      <Box style={{ width:8, height:64, borderRadius:4, background:'#22D3EE' }} />
+      <Text style={{ fontSize:44, color:'#E6EEF5', fontWeight:'bold', lineHeight:1.3 }}>看不清的停机，<Text style={{ color:'#22D3EE' }}>吃掉看得见的利润。</Text></Text>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'row', gap:18, alignItems:'stretch' }}>
+      {[
+        {n:'01', t:'人走机停', d:'关键故障只有老师傅能判断，人一走 / 一请假，全厂抓瞎。', q:'"王师傅今天没来，谁也不敢动那台机。"', k:'关键故障 100% 依赖个人', s:'经验锁在一个人脑子里'},
+        {n:'02', t:'故障拖大', d:'夜班操作工不会修、不敢拆，小毛病一路拖成大停机。', q:'"先凑合跑着，等白班再说吧。"', k:'非计划停机以小时计', s:'小毛病拖成大事故'},
+        {n:'03', t:'工具无用', d:'MES 只记录不决策；通用 AI 瞎编步骤，车间不敢照做。', q:'"系统只弹报警，没说到底该咋办。"', k:'有数据，但没有决策', s:'看得见，却看不懂'},
+      ].map((it, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', padding:'22px 22px', background:'rgba(255,255,255,0.04)', borderRadius:14, border:'1px solid rgba(255,255,255,0.08)' }}>
+          <Box style={{ flexDirection:'row', alignItems:'center', gap:12 }}>
+            <Box style={{ width:44, height:44, borderRadius:22, background:'rgba(255,77,79,0.15)', border:'1px solid rgba(255,77,79,0.5)', alignItems:'center', justifyContent:'center' }}>
+              <Text style={{ fontSize:18, color:'#FF4D4F', fontWeight:'bold' }}>{it.n}</Text>
+            </Box>
+            <Text style={{ fontSize:26, color:'#E6EEF5', fontWeight:'bold' }}>{it.t}</Text>
+          </Box>
+          <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.6, marginTop:16 }}>{it.d}</Text>
+          <Box style={{ marginTop:16, padding:'12px 14px', background:'rgba(255,77,79,0.08)', borderRadius:8, border:'1px solid rgba(255,77,79,0.25)' }}>
+            <Text style={{ fontSize:14, color:'#FFC9C9', lineHeight:1.45 }}>{it.q}</Text>
+          </Box>
+          <Box style={{ marginTop:14, paddingTop:12, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+            <Text style={{ fontSize:14, color:'#8FA3B8' }}>现状：{it.k}</Text>
+          </Box>
+          <Box style={{ marginTop:'auto', paddingTop:12 }}>
+            <Text style={{ fontSize:14, color:'#FF9B9D', fontWeight:'bold' }}>→ {it.s}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:22, padding:'16px 24px', background:'rgba(46,92,138,0.20)', borderRadius:12, border:'1px solid rgba(46,92,138,0.55)' }}>
+      <FAIcon name='chart-line' style={{ fill:'#22D3EE', width:34, height:34 }} />
+      <Text style={{ fontSize:38, color:'#22D3EE', fontWeight:'bold' }}>¥5万+</Text>
+      <Box style={{ width:1, height:40, background:'rgba(255,255,255,0.15)' }} />
+      <Text style={{ flex:1, fontSize:17, color:'#CDE6F5', lineHeight:1.5 }}>单次非计划停机损失（主轴抱闸）。中小厂利润薄，<Text style={{ color:'#E6EEF5', fontWeight:'bold' }}>停机账算不清，改善就没有抓手</Text>——这就是我们切入的地方。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>03 / 15</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,58 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 02</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>整体架构 · 一套本地，不依赖云</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>ARCHITECTURE</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:16, padding:'16px 24px', background:'rgba(34,211,238,0.10)', borderRadius:12, border:'1px solid rgba(34,211,238,0.35)' }}>
+      <FAIcon name='server' style={{ fill:'#22D3EE', width:30, height:30 }} />
+      <Text style={{ fontSize:25, color:'#E6EEF5', fontWeight:'bold', lineHeight:1.4 }}>一套本地部署的轻量级系统，<Text style={{ color:'#22D3EE' }}>一台旧电脑就能跑</Text>。不依赖云，断网也能用。</Text>
+    </Box>
+    <Box style={{ height:430, flexDirection:'row', gap:26, alignItems:'stretch' }}>
+      <Box style={{ width:690, alignItems:'center', justifyContent:'center' }}>
+        <svg width='690' height='340' viewBox='0 0 690 340'>
+          <rect x='8' y='8' width='674' height='72' rx='10' fill='#2E5C8A' />
+          <text x='28' y='40' style={{ fill:'#FFFFFF', fontSize:21, fontWeight:'bold' }}>车间界面</text>
+          <text x='28' y='64' style={{ fill:'#DCE9F5', fontSize:14 }}>车间平板 / 网页 · 报警置顶 · 一句话输入</text>
+          <rect x='8' y='92' width='674' height='72' rx='10' fill='#27496D' />
+          <text x='28' y='124' style={{ fill:'#FFFFFF', fontSize:21, fontWeight:'bold' }}>本地服务</text>
+          <text x='28' y='148' style={{ fill:'#DCE9F5', fontSize:14 }}>前后端同端口 · 一台旧电脑 · 无需上云</text>
+          <rect x='8' y='176' width='674' height='72' rx='10' fill='#1E3A5F' />
+          <text x='28' y='208' style={{ fill:'#FFFFFF', fontSize:21, fontWeight:'bold' }}>诊断智能体</text>
+          <text x='28' y='232' style={{ fill:'#DCE9F5', fontSize:14 }}>固定六步工作流 · 没有大模型也照样出报告</text>
+          <rect x='8' y='260' width='674' height='72' rx='10' fill='#16314F' />
+          <text x='28' y='292' style={{ fill:'#FFFFFF', fontSize:21, fontWeight:'bold' }}>数据与知识</text>
+          <text x='28' y='316' style={{ fill:'#9FB6CC', fontSize:14 }}>只读采集 · 知识库 · 记忆库 · 大模型（可选）</text>
+          <text x='648' y='140' style={{ fill:'#22D3EE', fontSize:30 }}>▲</text>
+          <text x='606' y='170' style={{ fill:'#22D3EE', fontSize:13 }}>数据只上行</text>
+        </svg>
+      </Box>
+      <Box style={{ flex:1, flexDirection:'column', justifyContent:'space-between', padding:'20px 22px', background:'rgba(255,255,255,0.04)', borderRadius:12, border:'1px solid rgba(255,255,255,0.08)' }}>
+        <Box style={{ flexDirection:'row', alignItems:'center', gap:10 }}>
+          <FAIcon name='server' style={{ fill:'#22D3EE', width:24, height:24 }} />
+          <Text style={{ fontSize:21, color:'#E6EEF5', fontWeight:'bold' }}>为什么"够硬"</Text>
+        </Box>
+        <Box style={{ height:1, background:'rgba(255,255,255,0.10)' }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.65 }}>① <Text style={{ color:'#22D3EE', fontWeight:'bold' }}>零门槛</Text>：不要 GPU、不要服务器集群，一台旧电脑即可；数据库自动建，知识库厂内技术员就能维护。</Text>
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.65 }}>② <Text style={{ color:'#22D3EE', fontWeight:'bold' }}>全本地</Text>：前后端、数据、知识库都在一台机器，内网与断网环境照常出完整报告。</Text>
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.65 }}>③ <Text style={{ color:'#22D3EE', fontWeight:'bold' }}>只读接入</Text>：OPC-UA 客户端没有任何写方法，并有回归测试守着这条线。</Text>
+        <Box style={{ height:1, background:'rgba(255,255,255,0.10)' }} />
+        <Box style={{ padding:'12px 14px', background:'rgba(34,211,238,0.08)', borderRadius:8, border:'1px solid rgba(34,211,238,0.25)' }}>
+          <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.5 }}>话术："一套本地系统，不依赖云，车间断网也能用。"</Text>
+        </Box>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12, padding:'13px 20px', background:'rgba(46,92,138,0.20)', borderRadius:10, border:'1px solid rgba(46,92,138,0.55)' }}>
+      <FAIcon name='shield' style={{ fill:'#22D3EE', width:22, height:22 }} />
+      <Text style={{ fontSize:18, color:'#CDE6F5', lineHeight:1.5 }}>亮点：<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>OPC-UA 只读接入，绝不干涉生产设备</Text>——采集只有读，没有写。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>05 / 15</Text>
+  </Box>
+</Slide>

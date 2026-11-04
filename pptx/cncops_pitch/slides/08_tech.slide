@@ -1,0 +1,37 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 02</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>技术选型（轻量 · 离线）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>STACK</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'center', gap:16 }}>
+    <Text style={{ fontSize:18, color:'#9FB6CC' }}>一台旧电脑 + 浏览器就能跑：<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>不需要 GPU、不需要服务器集群</Text>。</Text>
+    <Box style={{ flexDirection:'row', flexWrap:'wrap', gap:16 }}>
+      {[
+        {ic:'server', t:'后端', d:'Python + FastAPI + uvicorn'},
+        {ic:'code', t:'前端', d:'原生 HTML/CSS/JS，无框架无构建'},
+        {ic:'database', t:'数据库', d:'SQLite，自动创建、零安装'},
+        {ic:'file-text', t:'知识库', d:'YAML 文件，厂内技术员可维护'},
+        {ic:'search', t:'检索', d:'本地 TF-IDF 余弦，纯 Python 离线'},
+        {ic:'brain', t:'大模型', d:'OpenAI 兼容，Key 仅走环境变量，可选'},
+      ].map((c, i) => (
+        <Box key={i} style={{ width:368, flexDirection:'row', alignItems:'center', gap:14, padding:'18px 18px', background:'rgba(255,255,255,0.04)', borderRadius:12, border:'1px solid rgba(255,255,255,0.08)' }}>
+          <Box style={{ width:48, height:48, borderRadius:12, background:'rgba(34,211,238,0.12)', alignItems:'center', justifyContent:'center' }}>
+            <FAIcon name={c.ic} style={{ fill:'#22D3EE', width:24, height:24 }} />
+          </Box>
+          <Box>
+            <Text style={{ fontSize:19, color:'#E6EEF5', fontWeight:'bold' }}>{c.t}</Text>
+            <Text style={{ fontSize:14, color:'#9FB6CC', lineHeight:1.4 }}>{c.d}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>08 / 20</Text>
+  </Box>
+</Slide>

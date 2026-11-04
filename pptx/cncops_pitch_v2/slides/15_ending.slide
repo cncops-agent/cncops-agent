@@ -1,0 +1,61 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <svg style={{ position:'absolute', top:0, left:0 }} width='1280' height='720' viewBox='0 0 1280 720'>
+    <defs>
+      <pattern id='grid15' width='34' height='34' patternUnits='userSpaceOnUse'>
+        <path d='M34 0 L0 0 0 34' fill='none' stroke='rgba(255,255,255,0.05)' strokeWidth='1'/>
+      </pattern>
+    </defs>
+    <rect width='1280' height='720' fill='url(#grid15)'/>
+  </svg>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:38, left:60, padding:'7px 14px', borderRadius:6, background:'#22D3EE' }}>
+    <Text style={{ fontSize:14, color:'#0F1B2D', fontWeight:'bold', letterSpacing:1 }}>单人成军 · OPC 项目</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:38, right:60, flexDirection:'row', alignItems:'center', gap:10, padding:'8px 16px', border:'1px solid rgba(34,211,238,0.45)', borderRadius:30, background:'rgba(34,211,238,0.10)' }}>
+    <FAIcon name='shield' style={{ fill:'#22D3EE', width:18, height:18 }} />
+    <Text style={{ fontSize:14, color:'#22D3EE', fontWeight:'bold' }}>只读 · 不控设备</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:132, left:60, right:60, alignItems:'center' }}>
+    <Text style={{ fontSize:17, color:'#9FB6CC', textAlign:'center' }}>单人成军 · 从需求洞察、架构设计、代码实现到交付验证，一人完成</Text>
+    <Box style={{ flexDirection:'row', gap:10, marginTop:16 }}>
+      {['需求背景','技术方案','应用流程','功能演示','落地案例'].map((t, i) => (
+        <Box key={i} style={{ padding:'8px 16px', borderRadius:20, background:'rgba(46,92,138,0.22)', border:'1px solid rgba(46,92,138,0.55)' }}>
+          <Text style={{ fontSize:14, color:'#CDE6F5' }}>{t}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', top:250, left:0, right:0, alignItems:'center' }}>
+    <Text style={{ fontSize:54, color:'#E6EEF5', fontWeight:'bold', textAlign:'center', lineHeight:1.2 }}>让每一次停机</Text>
+    <Text style={{ fontSize:54, color:'#22D3EE', fontWeight:'bold', textAlign:'center', lineHeight:1.2, marginTop:6 }}>都变成工厂自己的经验</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:430, left:0, right:0, alignItems:'center' }}>
+    <Text style={{ fontSize:20, color:'#9FB6CC', textAlign:'center' }}>cncops-agent · 只读诊断 ｜ 仿真产线 POC 版 ｜ 2026</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:490, left:60, right:60, flexDirection:'row', gap:14 }}>
+    {[
+      { t:'只读红线', d:'永远不碰设备，危险步骤强制 LOTO 确认' },
+      { t:'离线可跑', d:'一台旧电脑、断网环境照样出完整报告' },
+      { t:'经验资产', d:'诊断与反馈自动沉淀，停机账自动统计' },
+    ].map((it, i) => (
+      <Box key={i} style={{ flex:1, padding:'16px 20px', background:'rgba(255,255,255,0.04)', borderRadius:12, border:'1px solid rgba(255,255,255,0.08)' }}>
+        <Text style={{ fontSize:19, color:'#22D3EE', fontWeight:'bold', textAlign:'center' }}>{it.t}</Text>
+        <Text style={{ fontSize:13.5, color:'#9FB6CC', lineHeight:1.45, textAlign:'center', marginTop:6 }}>{it.d}</Text>
+      </Box>
+    ))}
+  </Box>
+  <Box style={{ position:'absolute', left:0, right:0, bottom:0, height:96, flexDirection:'row', borderTop:'1px solid rgba(255,255,255,0.10)' }}>
+    <Box style={{ flex:1, alignItems:'center', justifyContent:'center', borderRight:'1px solid rgba(255,255,255,0.08)' }}>
+      <Text style={{ fontSize:30, color:'#22D3EE', fontWeight:'bold' }}>cncops-agent</Text>
+      <Text style={{ fontSize:13, color:'#8FA3B8' }}>车间设备智能诊断助手</Text>
+    </Box>
+    <Box style={{ flex:1, alignItems:'center', justifyContent:'center', borderRight:'1px solid rgba(255,255,255,0.08)' }}>
+      <Text style={{ fontSize:18, color:'#E6EEF5' }}>安装包 / 源码仓库</Text>
+      <Text style={{ fontSize:13, color:'#8FA3B8' }}>现场可离线体验</Text>
+    </Box>
+    <Box style={{ flex:1, alignItems:'center', justifyContent:'center' }}>
+      <Text style={{ fontSize:18, color:'#E6EEF5' }}>联系方式</Text>
+      <Text style={{ fontSize:13, color:'#8FA3B8' }}>欢迎交流 · 谢谢</Text>
+    </Box>
+  </Box>
+</Slide>

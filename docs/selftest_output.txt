@@ -1,0 +1,207 @@
+================================================================================================
+CNC 设备运维智能体 · 一键自动化自测
+================================================================================================
+随机种子        ：20261018（仿真器单例按该种子重建，逐次运行结果一致）
+临时记忆库      ：C:\Users\312\AppData\Local\Temp\cncops_selftest_iujh8yow\selftest_memory.db
+正式记忆库      ：D:\Factory Project\cncops-agent\data\cncops.db（自测前 0 条，自测结束会再核对一次）
+数据源          ：simulator（内置仿真，与 OPC-UA 同源；强制降级模式 LLM=0）
+Python          ：3.13.14
+
+================================================================================================
+A. 故障闭环：逐个注入全部可注入故障 + 口语描述跑完整诊断（断言 Top-1 / 报警码 / 30 秒内检出）
+================================================================================================
+[PASS] A-01 spindle_overheat  Top1=KB-CNC-001(37%)｜设备=CNC-01｜报警=ALM-101、ALM-105｜检出=0.02s｜冷却液流量=7.717L/min，主轴温度=87.322°C
+[PASS] A-02 spindle_vibration  Top1=KB-CNC-002(41%)｜设备=CNC-02｜报警=ALM-102｜检出=0.02s｜主轴振动=8.037mm/s
+[PASS] A-03 spindle_bearing_wear  Top1=KB-CNC-006(37%)｜设备=CNC-02｜报警=ALM-101、ALM-102｜检出=0.03s｜主轴温度=82.946°C，主轴振动=7.898mm/s
+[PASS] A-04 spindle_overload  Top1=KB-CNC-003(47%)｜设备=CNC-01｜报警=ALM-103、ALM-106｜检出=0.05s｜进给速度=304.934mm/min，主轴负载=95.871%
+[PASS] A-05 coolant_low  Top1=KB-CNC-004(49%)｜设备=CNC-02｜报警=ALM-105｜检出=0.01s｜冷却液流量=7.976L/min
+[PASS] A-06 cnc_air_low  Top1=KB-CNC-005(52%)｜设备=CNC-01｜报警=ALM-104｜检出=0.00s｜本机进气压力=0.484MPa
+[PASS] A-07 air_pressure_low  Top1=KB-AIR-001(57%)｜设备=AIR-01｜报警=ALM-202｜检出=0.00s｜出口压力=0.513MPa
+[PASS] A-08 air_overheat  Top1=KB-AIR-002(56%)｜设备=AIR-01｜报警=ALM-201｜检出=0.02s｜排气温度=108.662°C，润滑油温度=91.459°C
+[PASS] A-09 air_oil_overheat  Top1=KB-AIR-003(46%)｜设备=AIR-01｜报警=ALM-203｜检出=0.02s｜润滑油温度=104.166°C
+[PASS] A-10 air_motor_overload  Top1=KB-AIR-004(44%)｜设备=AIR-01｜报警=ALM-204｜检出=0.02s｜加载率=96.685%，电机电流=50.259A
+[PASS] A-11 air_maintenance_due  Top1=KB-AIR-003(49%)｜设备=AIR-01｜报警=ALM-205｜检出=0.03s｜累计运行小时=4018.572h
+[PASS] A-12 steps_traceable  全部用例的排查步骤均可溯源到本轮命中的知识库条目
+
+  检出耗时：最大 0.05s，平均 0.02s（验收线 30s）
+
+================================================================================================
+B. 误报回归：注入故障后不得派生无关报警码 / 不得命中无关故障条目
+================================================================================================
+[PASS] B-01 spindle_overheat  过热不许误报伺服/限位（闷车/进给异常）｜注入 spindle_overheat → 报警=ALM-101、ALM-105，Top1=KB-CNC-001(37%)｜禁止项：报警 ['ALM-103', 'ALM-106'] / Top1 ['KB-CNC-003']
+[PASS] B-02 spindle_vibration  振动不许误报主轴过热｜注入 spindle_vibration → 报警=ALM-102，Top1=KB-CNC-002(41%)｜禁止项：报警 ['ALM-101'] / Top1 ['KB-CNC-001']
+[PASS] B-03 air_pressure_low  压力低不许误报排气高温｜注入 air_pressure_low → 报警=ALM-202，Top1=KB-AIR-001(52%)｜禁止项：报警 ['ALM-201'] / Top1 ['KB-AIR-002']
+[PASS] B-04 air_overheat  空压机故障不许借用 CNC 节点/报警码｜注入 air_overheat → 报警=ALM-201，Top1=KB-AIR-002(56%)｜禁止项：报警 ['ALM-101', 'ALM-102', 'ALM-103', 'ALM-104', 'ALM-105', 'ALM-106'] / Top1 ['KB-CNC-001', 'KB-CNC-002', 'KB-CNC-005']
+[PASS] B-05 spindle_overload  过载/闷车不许误报主轴过热｜注入 spindle_overload → 报警=ALM-103、ALM-106，Top1=KB-CNC-003(47%)｜禁止项：报警 ['ALM-101'] / Top1 ['KB-CNC-001']
+[PASS] B-06 coolant_low  冷却液不足不许误报过载/闷车｜注入 coolant_low → 报警=ALM-105，Top1=KB-CNC-004(46%)｜禁止项：报警 ['ALM-103', 'ALM-106'] / Top1 ['KB-CNC-003']
+
+================================================================================================
+C. 不变量：未覆盖 / 历史复发 / 降级模式 / 记忆库 / 只读 / 正常态
+================================================================================================
+[PASS] C-01 uncovered  未覆盖判定=True｜结论=知识库未覆盖当前现象，以下仅提供通用安全处置原则，请联系…｜步骤来源=['KB-GEN-000']｜警告 9 条
+[PASS] C-02 history_recurrence  第二次诊断引用历史=有（引用 #19 / 命中 KB-CNC-006）
+[PASS] C-03 degraded_mode  mode=rule｜degraded=True｜七要素齐全=True｜降级原因：['未配置 LLM_API_BASE / LLM_API_KEY / LLM_MODEL']
+[PASS] C-04 feedback_effect  反馈“未解决”后重排：[('KB-CNC-001', '36%'), ('KB-CNC-002', '34%'), ('KB-CNC-006', '30%')]
+[PASS] C-05 normal_no_alarm  清除全部故障后各设备报警码：{'CNC-01': [], 'CNC-02': [], 'AIR-01': []}
+[PASS] C-06 readonly  数据源与客户端均为只读，无写入/控制调用
+[PASS] C-07 air_node_independent  AIR-01 与 CNC 点位交集：{'status': ['air_compressor', 'cnc'], 'alarm_code': ['air_compressor', 'cnc']}（status/alarm_code 为设计内共用派生字段）
+
+================================================================================================
+D. 阈值可达性：对每一个阈值项（warn/alarm）与每一个报警码穷举全部故障剧本做注入模拟
+================================================================================================
+设备类型            测点                          预警阈值      报警阈值      实测最佳            可达  备注
+--------------------------------------------------------------------------------------------------------
+cnc             spindle_temp                65.0      80.0     83.96    warn+alarm  由 spindle_overheat 触发
+cnc             spindle_vib                  4.5       7.0      7.48    warn+alarm  由 spindle_vibration 触发
+cnc             spindle_load                85.0      95.0     95.34    warn+alarm  由 spindle_overload 触发
+cnc             spindle_speed               0.12       0.2   4674.60    warn+alarm  由 spindle_overload 触发
+cnc             feed_rate                    0.3       0.5    371.15    warn+alarm  由 spindle_overload 触发
+cnc             inlet_air_pressure          0.55      0.45      0.45    warn+alarm  由 cnc_air_low 触发
+cnc             coolant_flow                12.0       8.0      7.49    warn+alarm  由 spindle_overheat 触发
+air_compressor  discharge_temp              95.0     105.0    107.81    warn+alarm  由 air_overheat 触发
+air_compressor  outlet_pressure             0.62       0.5      0.46    warn+alarm  由 air_pressure_low 触发
+air_compressor  oil_temp                    90.0     100.0    100.53    warn+alarm  由 air_oil_overheat 触发
+air_compressor  motor_current               42.0      48.0     48.69    warn+alarm  由 air_motor_overload 触发
+air_compressor  load_rate                   92.0      95.0     96.38    warn+alarm  由 air_pressure_low 触发
+air_compressor  run_hours                 3800.0    4000.0   4017.31    warn+alarm  由 air_maintenance_due 触发
+--------------------------------------------------------------------------------------------------------
+
+报警码       测点                          要求等级      可达  备注
+----------------------------------------------------------------------
+ALM-101   spindle_temp               alarm       是  spindle_overheat
+ALM-102   spindle_vib                alarm       是  spindle_vibration
+ALM-103   spindle_load               alarm       是  spindle_overload
+ALM-104   inlet_air_pressure          warn       是  cnc_air_low
+ALM-105   coolant_flow                warn       是  spindle_overheat
+ALM-106   feed_rate                  alarm       是  spindle_overload
+ALM-201   discharge_temp             alarm       是  air_overheat
+ALM-202   outlet_pressure             warn       是  air_pressure_low
+ALM-203   oil_temp                   alarm       是  air_oil_overheat
+ALM-204   motor_current              alarm       是  air_motor_overload
+ALM-205   run_hours                   warn       是  air_maintenance_due
+----------------------------------------------------------------------
+[PASS] D-00 reachability_summary  阈值/报警码可达性 37/37
+  全部阈值项与报警码均可在某个故障剧本注入后被触发。
+
+================================================================================================
+F. 展示层（Web API）：设备卡指标超标标红＋阈值说明／步骤分级与工具物料耗时／L3 危险信息
+================================================================================================
+[PASS] F-01 normal_cards  三台设备关键指标数 {'CNC-01': 4, 'CNC-02': 4, 'AIR-01': 3}；全部绿色且每项带阈值/报警线说明
+[PASS] F-02 spindle_overheat_over_cards  卡片等级 alarm｜全测点报警 ['spindle_temp', 'coolant_flow']
+[PASS] F-03 spindle_vibration_over_cards  卡片等级 alarm｜全测点报警 ['spindle_vib']
+[PASS] F-04 spindle_bearing_wear_over_cards  卡片等级 alarm｜全测点报警 ['spindle_temp', 'spindle_vib']
+[PASS] F-05 spindle_overload_over_cards  卡片等级 alarm｜全测点报警 ['spindle_load', 'spindle_speed', 'feed_rate']
+[PASS] F-06 coolant_low_over_cards  卡片等级 alarm｜全测点报警 ['coolant_flow']
+[PASS] F-07 cnc_air_low_over_cards  卡片等级 alarm｜全测点报警 ['inlet_air_pressure']
+[PASS] F-08 air_pressure_low_over_cards  卡片等级 alarm｜全测点报警 ['outlet_pressure', 'load_rate']
+[PASS] F-09 air_overheat_over_cards  卡片等级 alarm｜全测点报警 ['discharge_temp']
+[PASS] F-10 air_oil_overheat_over_cards  卡片等级 alarm｜全测点报警 ['oil_temp']
+[PASS] F-11 air_motor_overload_over_cards  卡片等级 alarm｜全测点报警 ['motor_current', 'load_rate']
+[PASS] F-12 air_maintenance_due_over_cards  卡片等级 alarm｜全测点报警 ['run_hours']
+[PASS] F-13 step_grouping  步骤 8 条｜L1 5 / L2 2 / L3 1｜等级合法=True｜key/正文齐全=True｜工具物料耗时齐全=True｜L3 均带危险标注=True
+[PASS] F-14 evidence_spark  超标证据 3 条，趋势点数 [30, 30, 30]
+[PASS] F-15 evidence_cross  越限起点与偏差文案齐全
+[PASS] F-16 trend_buffer  各设备采样点 {'CNC-01': 50, 'CNC-02': 50, 'AIR-01': 50}；主轴温度 注入前均值 45.4°C → 注入后 92.5°C
+[PASS] F-17 sampler_thread  后台线程启动后三台设备均采到点（≥2），且可正常停止（is_alive=False）
+  （说明：后台采样线程会额外推进仿真，已按固定种子重建仿真器，后续用例结果仍可复现。）
+
+================================================================================================
+G. Web API 端到端：产线总览／诊断报告（结论先行）／知识库详情／勾选持久化／反馈入历史／演示注入
+================================================================================================
+[PASS] G-01 health_index_line  health=ok｜首页/静态资源 齐全｜产线总览「3 台设备全部正常」
+[PASS] G-02 inject_alarm_first  检出耗时 1.0s｜「3 台设备中 1 台报警」｜首卡 CNC-01（报警）
+[PASS] G-03 report_conclusion_first  结论「一号加工中心 · 主轴温度过高（F001，置信度 中）」｜证据 3 条均带趋势与越限起点｜步骤 8 条｜L1 5/L2 2/L3 1
+[PASS] G-04 kb_detail  KB KB-CNC-001（F001）「主轴温度过高」步骤 6 条
+[PASS] G-05 checklist_persist  步骤 KB-CNC-001#0 勾选已持久化（服务端回读 {'KB-CNC-001#0': True}）
+[PASS] G-06 feedback_history  反馈回执「已记录：本次处理有效，下次会优先推荐。」｜历史命中 1 条（结果=已解决）｜搜「主轴」15 条｜筛 CNC-02 9 条
+[PASS] G-07 uncovered_hint  uncovered=True｜通用安全建议 9 条｜结论区回退为「现象未覆盖时的通用安全处置原则」
+[PASS] G-08 demo_clear  全部设备 已恢复正常
+
+================================================================================================
+H. 验收剧本：正常运行 → 注入主轴过热 → 口语提问 → 分级步骤 → 恢复 → 入历史 → 二次提问引用历史
+================================================================================================
+[PASS] H-01 normal_running  三台设备报警码均为空、全部测点正常（状态：{'CNC-01': 'RUN', 'CNC-02': 'RUN', 'AIR-01': 'RUN'}）
+[PASS] H-02 inject_overheat  检出耗时 0.02s｜报警 ALM-101、ALM-105｜报警测点 ['coolant_flow', 'spindle_temp']
+[PASS] H-03 ask_in_colloquial  识别设备 CNC-01｜Top1=KB-CNC-001（40%）｜超标证据 3 条
+[PASS] H-04 graded_steps  L1 5 条 / L2 2 条 / L3 1 条（L3 均带危险标注与安全要求，前端进入前强制确认）
+[PASS] H-05 handled_and_recovered  恢复后报警码为空、测点全部正常（主轴温度 45.3°C）
+[PASS] H-06 history_saved  历史 #27 已存：快照测点 7 个、结果=已解决、备注=“补冷却液并清理滤网后温度回落”
+[PASS] H-07 history_referenced  第二次诊断引用历史 #27（主轴温度过高｜处理结果：已解决｜备注：补冷却液并清理滤网后温度回落）
+
+================================================================================================
+I. 经验沉淀与导出：多工厂隔离／复发提醒／平均处理时长／操作人／CSV+Excel 导出
+================================================================================================
+[PASS] I-01 factory_isolation  F001 统计含 CNC-01、不含 CNC-05；F002 反之（F001 设备数 3，F002 设备数 1）
+[PASS] I-02 recurrence_alert  CNC-99 30 天内 3 次（critical）｜CNC-98 2 次（warn）
+[PASS] I-03 avg_handling  两条记录处理时长分别为 30 分钟（填报）与约 12 分钟（时间差兜底），平均 21.0 分钟（期望 21.0）
+[PASS] I-04 operator_end_to_end  记录 #40：操作人=王五｜处理 35 分钟｜停机 50 分钟｜工厂=一号工厂｜CNC-01 累计停机 50 分钟
+[PASS] I-05 export_csv  HTTP 200｜BOM=有｜表头 18 列含操作人/停机时长｜数据行 5 条（库内 5 条）
+[PASS] I-06 export_xlsx  HTTP 200｜4682 字节｜工作表：运维记录 + 故障与停机统计｜明细含合成设备行、统计表含停机汇总
+[PASS] I-07 export_validation  fmt=pdf → HTTP 400｜result=已完成 → HTTP 400｜工厂目录 ['F001', 'F002']（F001 设备数 3）
+
+================================================================================================
+J. 覆盖完整性与守门串联：KB↔用例双向覆盖 / 十台配置真实加载 / 阈值守门脚本
+================================================================================================
+[PASS] J-01 kb_case_coverage  KB 故障条目 10 个全部有用例断言 Top-1；故障剧本 11 个全部配套口语用例；用例引用的 KB id / 报警码均真实存在
+[PASS] J-02 devices_10_preview  10 台设备 / F001+F002 双工厂各 5 台 / 基线无报警 / 每工厂注入代表故障可检出｜exit=0｜OK CNC-01 +spindle_overheat -> ['ALM-101', 'ALM-105'] (0.10s)
+      OK AIR-02 +air_pressure_low -> ['ALM-202'] (0.00s)
+      DEVICES10_ALL_OK
+[PASS] J-03 threshold_gate_script  scripts/check_thresholds.py 作为子进程串联进自测（D 段可达性的动态稳定性补充）｜exit=0｜air_motor_overload  load_rate                  99.00     95.00   alarm       0.057  PASS
+      air_maintenance_due run_hours                4150.00   4000.00   alarm       0.071  PASS
+      ------------------------------------------------------------------------------------------------
+      结论：全部故障剧本的必越限测点均可稳定越限（阈值可达），自检通过
+[PASS] J-04 devices_30_acceptance  30 台设备（20 CNC + 10 空压机）/ F001+F002 各 15 台 / 基线无报警 / 两工厂注入代表故障可检出｜exit=0｜OK CNC-01 +spindle_overheat -> ['ALM-101', 'ALM-105'] (0.10s)
+      OK AIR-10 +air_pressure_low -> ['ALM-202'] (0.00s)
+      DEVICES30_ALL_OK
+
+================================================================================================
+K. 紧凑列表/抽屉数据契约：行字段 / 趋势同源 / 抽屉全测点与历史 / 断线语义
+================================================================================================
+[PASS] K-01 line_row_fields  3 台设备行字段齐全（缺字段=无）；关键测点按类型选取正确（CNC→spindle_temp，空压机→outlet_pressure，异常=无）；关键值字段缺漏=无
+[PASS] K-02 trend_series_contract  n=24 上限遵守（超限=无）；每点为 {t: 字符串, v: 数值} 且时间递增（异常=无）；series 测点集合与抽屉详情一致（不一致=无）
+[PASS] K-03 drawer_detail_history  抽屉全测点 7 项且含阈值字段；最近运维历史 5 条（≤5）且字段齐全（缺字段记录=无）
+[PASS] K-04 offline_semantics  场景A 返回 None：/api/line 200 且 CNC-02 行 severity=offline+degraded+文案「数据连接中断」（实际 offline/True）｜场景B 抛异常：/api/line 500、/api/devices 503「数据连接中断：模拟数据源断线」（前端据此显顶部横幅与抽屉中断）
+[PASS] K-05 line_rank_order  注入 CNC-01 过热后序列 alarm>normal>normal（报警必须排在最前；前端另有 rank 兜底）
+
+================================================================================================
+L. 反馈规则：操作人必填 / 停机时长自动计时（报警起点→确认解决停表）
+================================================================================================
+[PASS] L-01 operator_required  空姓名提交 → HTTP 400「操作人不能为空：请填写处理人姓名/工号后再提交反馈」；记录 #41 仍为「未反馈」（未落库）
+[PASS] L-01b operator_recorded  补填操作人「张三」→ 200；历史记录 #41 结果=已解决、实际处理人=张三
+[PASS] L-02 downtime_auto_timing  报警起点设为 10 分钟前 → 反馈未填报停机时长 → 自动计时 10 分钟（downtime_auto=True）；历史记录 #42 停机=10 分钟；报警事件已标记 consumed（计时停止）
+[PASS] L-02b downtime_manual_override  报警起点 5 分钟前但填报 99 分钟 → 入库 99 分钟（downtime_auto=False，填报优先）；事件已标记 consumed（停表）
+[PASS] L-02c no_restart_after_resolved  反馈确认解决后报警仍持续：alarm_since 保持 2026-11-04T19:48:04（实际 2026-11-04T19:48:04）、事件 consumed=True、downtime_auto=True（不起新表 → 前端计时器不会重启）
+[PASS] L-02d new_alarm_new_episode  报警消失后事件关闭（存在=False）；再次报警起新表：2026-11-04T19:48:04 → 2026-11-04T19:48:09
+[PASS] L-03 alarm_episode_lifecycle  注入 CNC-02 过热：alarm_active=True、alarm_since=2026-11-04T19:48:10；恢复后 alarm_active=False 且起点保留（2026-11-04T19:48:10，供反馈时计算停机）
+
+================================================================================================
+M. L3 服务端强制闸门：未确认 locked／绕前端 400／确认留痕／非法步骤拒绝
+================================================================================================
+[PASS] M-01 l3_locked_initially  记录 #45｜L3 1 条均 locked 且无确认留痕
+[PASS] M-02 bypass_blocked  绕前端直接标记 L3 完成 → HTTP 400｜未落库=True
+[PASS] M-03 ack_validation  空确认人 400｜伪造 step_key 400｜无信号来源的 signal 模式 400（均应为 400）
+[PASS] M-04 ack_recorded  人工确认留痕：持证工程师-张三 @ 2026-11-04T19:48:10｜历史详情可查
+[PASS] M-05 ack_unlocks_checklist  确认后 L3 可标记完成 HTTP 200｜L1 不受影响
+[PASS] M-06 history_ack_visible  历史详情步骤回显 locked=False + 确认凭据（匹配 1 条）
+[PASS] E-01 memory_isolation  正式库行数 0 → 0（应不变）；本次自测写入临时库 45 条
+
+================================================================================================
+汇总
+================================================================================================
+  A 段：12/12
+  B 段：6/6
+  C 段：7/7
+  D 段：1/1
+  E 段：1/1
+  F 段：17/17
+  G 段：8/8
+  H 段：7/7
+  I 段：7/7
+  J 段：4/4
+  K 段：5/5
+  L 段：7/7
+  M 段：6/6
+
+  总计：88/88  全部通过
+
+  临时目录：C:\Users\312\AppData\Local\Temp\cncops_selftest_iujh8yow（自测结束清理）

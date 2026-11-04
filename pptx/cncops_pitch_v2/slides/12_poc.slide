@@ -1,0 +1,58 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 05</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>POC 验证与客户价值</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>POC · ROI</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:18, padding:'14px 22px', background:'rgba(34,211,238,0.10)', borderRadius:12, border:'1px solid rgba(34,211,238,0.35)' }}>
+      <Box style={{ padding:'8px 14px', borderRadius:8, background:'#22D3EE' }}>
+        <Text style={{ fontSize:15, color:'#0F1B2D', fontWeight:'bold' }}>概念验证 POC</Text>
+      </Box>
+      <Text style={{ flex:1, fontSize:18, color:'#CDE6F5', lineHeight:1.5 }}>在仿真产线上完整复现<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>断网、夜班无人值守</Text>等工况，验证了系统在这些场景下的可用性。</Text>
+    </Box>
+    <Box style={{ flexDirection:'row', gap:18 }}>
+      {[
+        {n:'3', u:'台', t:'联调设备', d:'一号加工中心 / 空压机 / 二号加工中心'},
+        {n:'11', u:'个', t:'故障剧本', d:'主轴过热、振动、轴承磨损、气压低等可注入'},
+        {n:'82', u:'项', t:'自测全过', d:'逐个注入断言 Top-1，含误报回归与阈值可达性'},
+      ].map((it, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', padding:'18px 22px', background:'rgba(255,255,255,0.04)', borderRadius:14, border:'1px solid rgba(255,255,255,0.08)' }}>
+          <Box style={{ flexDirection:'row', alignItems:'baseline', gap:6 }}>
+            <Text style={{ fontSize:70, color:'#22D3EE', fontWeight:'bold', lineHeight:1 }}>{it.n}</Text>
+            <Text style={{ fontSize:20, color:'#22D3EE', fontWeight:'bold' }}>{it.u}</Text>
+          </Box>
+          <Text style={{ fontSize:20, color:'#E6EEF5', fontWeight:'bold', marginTop:8 }}>{it.t}</Text>
+          <Text style={{ fontSize:13.5, color:'#9FB6CC', lineHeight:1.5, marginTop:6 }}>{it.d}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', gap:16, alignItems:'stretch' }}>
+      <Box style={{ flex:1, flexDirection:'column', padding:'16px 22px', background:'rgba(255,77,79,0.10)', borderRadius:12, border:'1px solid rgba(255,77,79,0.40)' }}>
+        <Text style={{ fontSize:15, color:'#FFC9C9' }}>不装系统 · 一次主轴抱闸停机</Text>
+        <Text style={{ fontSize:38, color:'#FF4D4F', fontWeight:'bold', marginTop:4 }}>损失数万元</Text>
+        <Text style={{ fontSize:13, color:'#9FB6CC', marginTop:4 }}>中小厂利润薄，停机一天吃掉一个月利润</Text>
+      </Box>
+      <Box style={{ width:60, alignItems:'center', justifyContent:'center' }}>
+        <Text style={{ fontSize:24, color:'#8FA3B8', fontWeight:'bold' }}>VS</Text>
+      </Box>
+      <Box style={{ flex:1, flexDirection:'column', padding:'16px 22px', background:'rgba(34,211,238,0.10)', borderRadius:12, border:'1px solid rgba(34,211,238,0.40)' }}>
+        <Text style={{ fontSize:15, color:'#CDE6F5' }}>专业版订阅</Text>
+        <Text style={{ fontSize:38, color:'#22D3EE', fontWeight:'bold', marginTop:4 }}>¥6,800 / 年起</Text>
+        <Text style={{ fontSize:13, color:'#9FB6CC', marginTop:4 }}>按覆盖 80% 常见故障测算，一次停机就回本</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12, padding:'12px 20px', background:'rgba(46,92,138,0.20)', borderRadius:10, border:'1px solid rgba(46,92,138,0.55)' }}>
+      <FAIcon name='exclamation-circle' style={{ fill:'#22D3EE', width:20, height:20 }} />
+      <Text style={{ flex:1, fontSize:15, color:'#CDE6F5', lineHeight:1.5 }}>口径说明：以上为<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>仿真产线 POC + 商业测算</Text>，尚未接入真实工厂设备；边界详见第 14 页。</Text>
+      <Text style={{ fontSize:17, color:'#22D3EE', fontWeight:'bold' }}>一次停机就回本</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>12 / 15</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,39 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 01</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>需求背景 · 设备运维五大痛点</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>WHY</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ flex:1.5, flexDirection:'column', gap:10, justifyContent:'center' }}>
+      {[
+        {t:'会说的不会修、会修的不在', d:'操作工发现异常却不会处理，维修工又不在现场 → 小故障拖成大停机'},
+        {t:'经验锁在老师傅脑子里', d:'人走技失，厂里"失忆"，关键故障只有一个人能判断'},
+        {t:'MES 看得见、看不懂', d:'数据在、决策不在——系统告诉你发生了什么，却没说该怎么办'},
+        {t:'通用聊天机器人不敢用', d:'会编步骤、没有安全边界，车间里谁敢照它说的拆机'},
+        {t:'停机账算不清', d:'改善没抓手，老板心里没底，预算年年难批'},
+      ].map((it, i) => (
+        <Box key={i} style={{ flexDirection:'row', alignItems:'flex-start', gap:14, padding:'12px 16px', background:'rgba(255,255,255,0.04)', borderRadius:10, border:'1px solid rgba(255,255,255,0.07)' }}>
+          <FAIcon name='exclamation-triangle' style={{ fill:'#FF4D4F', width:22, height:22, marginTop:2 }} />
+          <Box>
+            <Text style={{ fontSize:19, color:'#E6EEF5', fontWeight:'bold' }}>{it.t}</Text>
+            <Text style={{ fontSize:14, color:'#9FB6CC', lineHeight:1.45 }}>{it.d}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ width:360, justifyContent:'center', padding:'28px 26px', background:'rgba(34,211,238,0.08)', borderRadius:16, border:'1px solid rgba(34,211,238,0.35)' }}>
+      <FAIcon name='chart-line' style={{ fill:'#22D3EE', width:40, height:40 }} />
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold', marginTop:14, lineHeight:1.3 }}>ROI<Text style={{ color:'#22D3EE' }}> 一次停机就回本</Text></Text>
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.6, marginTop:14 }}>系统年费仅<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>数千元</Text>；而一次主轴抱闸停机损失<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>数千至数万元</Text>。</Text>
+      <Text style={{ fontSize:14, color:'#8FA3B8', lineHeight:1.55, marginTop:16 }}>中国数十万中小加工厂，设备运维高度依赖个人经验——这正是我们要填的坑。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>03 / 20</Text>
+  </Box>
+</Slide>

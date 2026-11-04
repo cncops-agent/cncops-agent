@@ -1,0 +1,24 @@
+# 环境与密钥：绝不允许提交真实密钥
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# 运行产物
+data/*.db
+data/*.db-wal
+data/*.db-shm
+logs/
+*.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

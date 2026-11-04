@@ -1,0 +1,61 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 01</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>目标客群 · 中小加工厂</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>WHO</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ width:340, justifyContent:'space-between', paddingTop:16, paddingBottom:16 }}>
+      <Text style={{ fontSize:30, color:'#22D3EE', fontWeight:'bold' }}>谁最该用？</Text>
+      <Text style={{ fontSize:18, color:'#9FB6CC', lineHeight:1.65, marginTop:14 }}>首要客群是<Text style={{ color:'#E6EEF5', fontWeight:'bold' }}>中小机加工厂</Text>：几十台设备、没有专职设备工程师，关键故障全靠一两个老师傅撑着。</Text>
+      <Box style={{ marginTop:22, padding:'16px 18px', background:'rgba(46,92,138,0.18)', borderRadius:12, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.6 }}>典型场景：夜班无人值守 · 老师傅请假 · 新工人不敢拆机 · 老板想知道哪台最爱坏</Text>
+      </Box>
+      <Box style={{ marginTop:14, padding:'14px 18px', background:'rgba(34,211,238,0.10)', borderRadius:12, border:'1px solid rgba(34,211,238,0.35)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.55 }}>一套系统把"设备医生"拆成三层能力，<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>不替代人，也不依赖专家在场</Text>。</Text>
+      </Box>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', gap:0, justifyContent:'space-between', paddingTop:6, paddingBottom:6 }}>
+      <Table
+        style={{ width:'100%', height:300 }}
+        defaultTextStyle={{ fontSize:16, color:'#E6EEF5' }}
+        defaultCellStyle={{ border:{ left:{width:1,color:'rgba(255,255,255,0.08)'}, right:{width:1,color:'rgba(255,255,255,0.08)'}, top:{width:1,color:'rgba(255,255,255,0.08)'}, bottom:{width:1,color:'rgba(255,255,255,0.08)'} }, background:{color:'rgba(255,255,255,0.03)'} }}
+        cells={[
+          [
+            { text:'角色', textStyle:{ bold:true, color:'#0F1B2D' }, cellStyle:{ background:{color:'#22D3EE'} } },
+            { text:'系统给什么', textStyle:{ bold:true, color:'#0F1B2D' }, cellStyle:{ background:{color:'#22D3EE'} } },
+          ],
+          [ { text:'操作工', textStyle:{bold:true,color:'#22D3EE'} }, { text:'机台旁做 L1：一句话诊断 + 分级步骤，戴手套也能点' } ],
+          [ { text:'维修工', textStyle:{bold:true,color:'#22D3EE'} }, { text:'随叫随到做 L2：完整七块报告 + 相似历史复发引用' } ],
+          [ { text:'老板 / 厂长', textStyle:{bold:true,color:'#22D3EE'} }, { text:'看停机账与经验台账，高频故障、处理时长可导出 Excel' } ],
+        ]}
+      />
+      <Box style={{ flexDirection:'row', alignItems:'center', gap:10, padding:'11px 16px', background:'rgba(34,211,238,0.08)', borderRadius:8, border:'1px solid rgba(34,211,238,0.25)' }}>
+        <FAIcon name='arrow-right' style={{ fill:'#22D3EE', width:18, height:18 }} />
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.45 }}>采购视角：不换设备、不改产线、不添 IT 人手，装上一台旧电脑就能试。</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:14 }}>
+        {[
+          { t:'为什么是现在', d:'老师傅集中退休、年轻人不愿进车间；设备数据早就有，却没人会用、没人能决策。' },
+          { t:'谁拍板买单', d:'厂长 / 老板看的是停机账和投产比，不是技术参数堆得多漂亮——预算难批，就因为算不清账。' },
+        ].map((it, i) => (
+          <Box key={i} style={{ flex:1, flexDirection:'column', padding:'20px 18px', background:'rgba(255,255,255,0.04)', borderRadius:10, border:'1px solid rgba(255,255,255,0.08)' }}>
+            <Text style={{ fontSize:18, color:'#22D3EE', fontWeight:'bold' }}>{it.t}</Text>
+            <Text style={{ fontSize:14, color:'#9FB6CC', lineHeight:1.5, marginTop:6 }}>{it.d}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ flexDirection:'row', alignItems:'center', gap:10, marginTop:14, padding:'12px 16px', background:'rgba(46,92,138,0.18)', borderRadius:10 }}>
+        <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:20, height:20 }} />
+        <Text style={{ fontSize:15, color:'#CDE6F5', lineHeight:1.5 }}>一个厂、一套本地系统，三个角色各取所需，不用配 IT 团队。</Text>
+      </Box>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>04 / 15</Text>
+  </Box>
+</Slide>

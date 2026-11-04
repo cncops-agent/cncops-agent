@@ -1,0 +1,36 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>CONTENTS</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>目录</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>四大板块</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ width:320, justifyContent:'center' }}>
+      <Text style={{ fontSize:56, color:'#22D3EE', fontWeight:'bold' }}>04</Text>
+      <Text style={{ fontSize:20, color:'#8FA3B8', lineHeight:1.6, marginTop:10 }}>四个板块，讲清我们<Text style={{ color:'#E6EEF5', fontWeight:'bold' }}>做什么、怎么做、怎么用、值多少</Text>——一屏看完项目全貌。</Text>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', gap:14, justifyContent:'center' }}>
+      {[
+        {n:'01', t:'需求背景', d:'制造业设备运维的五大痛点与机会'},
+        {n:'02', t:'技术方案', d:'怎么做到安全可信、离线可用'},
+        {n:'03', t:'AI 工具应用流程', d:'一线人员如何上手、效果如何'},
+        {n:'04', t:'价值与落地', d:'传统运维对比与产业场景价值'},
+      ].map((it, i) => (
+        <Box key={i} style={{ flexDirection:'row', alignItems:'center', gap:18, padding:'16px 20px', background:'rgba(255,255,255,0.04)', borderRadius:12, border:'1px solid rgba(255,255,255,0.08)' }}>
+          <Text style={{ fontSize:26, color:'#22D3EE', fontWeight:'bold', width:44 }}>{it.n}</Text>
+          <Box>
+            <Text style={{ fontSize:20, color:'#E6EEF5', fontWeight:'bold' }}>{it.t}</Text>
+            <Text style={{ fontSize:14, color:'#8FA3B8' }}>{it.d}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>02 / 20</Text>
+  </Box>
+</Slide>

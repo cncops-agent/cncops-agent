@@ -1,0 +1,44 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 03</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>端到端应用流程（口语 → 结论）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>FLOW</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', gap:8, alignItems:'center' }}>
+      {[
+        {t:'口语输入', s:'"一号机发烫"'},
+        {t:'实时数据', s:'读测点·比阈值'},
+        {t:'检索+引用', s:'知识库+历史'},
+        {t:'七块报告', s:'结论先行'},
+        {t:'分步排查', s:'L1/L2/L3·LOTO'},
+        {t:'反馈沉淀', s:'入记忆库'},
+      ].map((f, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', alignItems:'center', padding:'12px 8px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+          <Text style={{ fontSize:16, color:'#E6EEF5', fontWeight:'bold', textAlign:'center' }}>{f.t}</Text>
+          <Text style={{ fontSize:12, color:'#9FB6CC', textAlign:'center', marginTop:4 }}>{f.s}</Text>
+          {i < 5 && <Text style={{ fontSize:12, color:'#22D3EE', marginTop:6 }}>→</Text>}
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', gap:18 }}>
+      {[
+        {img:'assets/alarm_top.png', cap:'① 报警置顶：注入故障后顶栏变红'},
+        {img:'assets/report_card.png', cap:'② 七块报告：含 F001 编号与实测证据'},
+        {img:'assets/history_ref.png', cap:'③ 相似历史：主动引用上次处理'},
+      ].map((p, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', alignItems:'center' }}>
+          <Image src={p.img} style={{ width:'100%', height:300, objectFit:'contain', borderRadius:10, background:'rgba(255,255,255,0.03)', border:'1px solid rgba(255,255,255,0.08)' }} />
+          <Text style={{ fontSize:14, color:'#9FB6CC', textAlign:'center', lineHeight:1.45, marginTop:8 }}>{p.cap}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>12 / 20</Text>
+  </Box>
+</Slide>

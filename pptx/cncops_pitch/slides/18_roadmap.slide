@@ -1,0 +1,37 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 04</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>后续路线（仿真 → 真实 → 多品类）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>ROADMAP</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'center', gap:20 }}>
+    <Box style={{ flexDirection:'row', gap:18, alignItems:'stretch' }}>
+      {[
+        {n:'1', t:'仿真产线验证', d:'已交付：3 台设备、11 故障剧本、82 项自测', hot:true},
+        {n:'2', t:'半真实只读网关', d:'接真机 OPC-UA 只读 + 1 条产线试点，保持只读边界', hot:false},
+        {n:'3', t:'多品类扩展', d:'注塑 / 冲床 / 压铸，schema 化点位 + 品类分包', hot:false},
+        {n:'4', t:'生态（远期）', d:'配件商工单、停机保险数据服务', hot:false},
+      ].map((r, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', padding:'20px 16px', background:r.hot ? 'rgba(34,211,238,0.12)' : 'rgba(255,255,255,0.04)', borderRadius:14, border:r.hot ? '2px solid #22D3EE' : '1px solid rgba(255,255,255,0.08)' }}>
+          <Box style={{ width:44, height:44, borderRadius:22, background:r.hot ? '#22D3EE' : '#2E5C8A', alignItems:'center', justifyContent:'center', marginBottom:12 }}>
+            <Text style={{ fontSize:22, color:r.hot ? '#0F1B2D' : '#FFFFFF', fontWeight:'bold' }}>{r.n}</Text>
+          </Box>
+          <Text style={{ fontSize:19, color:'#E6EEF5', fontWeight:'bold' }}>{r.t}</Text>
+          <Text style={{ fontSize:13.5, color:'#9FB6CC', lineHeight:1.5, marginTop:8 }}>{r.d}</Text>
+          {r.hot && <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', marginTop:8 }}>✓ 已交付</Text>}
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12, padding:'14px 18px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+      <FAIcon name='shield' style={{ fill:'#22D3EE', width:22, height:22 }} />
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.5 }}>原则不变：任何阶段都保持<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>只读</Text>——这是敢进车间的前提。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>18 / 20</Text>
+  </Box>
+</Slide>

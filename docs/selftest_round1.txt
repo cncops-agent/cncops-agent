@@ -1,0 +1,107 @@
+================================================================================================
+CNC 设备运维智能体 · 一键自动化自测
+================================================================================================
+随机种子        ：20261018（仿真器单例按该种子重建，逐次运行结果一致）
+临时记忆库      ：C:\Users\312\AppData\Local\Temp\cncops_selftest_fbkvofpb\selftest_memory.db
+正式记忆库      ：D:\Factory Project\cncops-agent\data\cncops.db（自测前 6 条，自测结束会再核对一次）
+数据源          ：simulator（内置仿真，与 OPC-UA 同源；强制降级模式 LLM=0）
+Python          ：3.13.14
+
+================================================================================================
+A. 故障闭环：逐个注入全部可注入故障 + 口语描述跑完整诊断（断言 Top-1 / 报警码 / 30 秒内检出）
+================================================================================================
+[PASS] A-01 spindle_overheat  Top1=KB-CNC-001(41%)｜设备=CNC-01｜报警=ALM-101、ALM-105｜检出=0.02s｜冷却液流量=7.717L/min，主轴温度=87.322°C
+[PASS] A-02 spindle_vibration  Top1=KB-CNC-002(46%)｜设备=CNC-02｜报警=ALM-102｜检出=0.02s｜主轴振动=8.037mm/s
+[FAIL] A-03 spindle_bearing_wear  Top1=KB-CNC-001(38%)｜设备=CNC-02｜报警=ALM-101、ALM-102｜检出=0.03s｜主轴温度=82.946°C，主轴振动=7.898mm/s → 期望 Top1=KB-CNC-006/设备=CNC-02/报警⊇['ALM-101', 'ALM-102']｜实际 Top1=KB-CNC-001(38%)/CNC-02/ALM-101、ALM-102
+[PASS] A-04 spindle_overload  Top1=KB-CNC-003(41%)｜设备=CNC-01｜报警=ALM-103、ALM-106｜检出=0.05s｜进给速度=304.934mm/min，主轴负载=95.871%
+[PASS] A-05 coolant_low  Top1=KB-CNC-004(43%)｜设备=CNC-02｜报警=ALM-105｜检出=0.01s｜冷却液流量=7.976L/min
+[PASS] A-06 cnc_air_low  Top1=KB-CNC-005(46%)｜设备=CNC-01｜报警=ALM-104｜检出=0.00s｜本机进气压力=0.484MPa
+[PASS] A-07 air_pressure_low  Top1=KB-AIR-001(51%)｜设备=AIR-01｜报警=ALM-202｜检出=0.00s｜出口压力=0.513MPa
+[PASS] A-08 air_overheat  Top1=KB-AIR-002(49%)｜设备=AIR-01｜报警=ALM-201｜检出=0.02s｜排气温度=108.662°C，润滑油温度=91.459°C
+[PASS] A-12 steps_traceable  全部用例的排查步骤均可溯源到本轮命中的知识库条目
+
+  检出耗时：最大 0.05s，平均 0.02s（验收线 30s）
+
+================================================================================================
+B. 误报回归：注入故障后不得派生无关报警码 / 不得命中无关故障条目
+================================================================================================
+[PASS] B-01 spindle_overheat  过热不许误报闷车/进给异常｜注入 spindle_overheat → 报警=ALM-101、ALM-105，Top1=KB-CNC-001(41%)｜禁止项：报警 ['ALM-103', 'ALM-106'] / Top1 ['KB-CNC-003']
+[PASS] B-02 spindle_vibration  振动不许误报主轴过热｜注入 spindle_vibration → 报警=ALM-102，Top1=KB-CNC-002(46%)｜禁止项：报警 ['ALM-101'] / Top1 ['KB-CNC-001']
+[PASS] B-03 air_pressure_low  压力低不许误报排气高温｜注入 air_pressure_low → 报警=ALM-202，Top1=KB-AIR-001(46%)｜禁止项：报警 ['ALM-201'] / Top1 ['KB-AIR-002']
+[PASS] B-04 air_overheat  空压机故障不许借用 CNC 节点/报警码｜注入 air_overheat → 报警=ALM-201，Top1=KB-AIR-002(49%)｜禁止项：报警 ['ALM-101', 'ALM-102', 'ALM-103', 'ALM-104', 'ALM-105', 'ALM-106'] / Top1 ['KB-CNC-001', 'KB-CNC-002', 'KB-CNC-005']
+
+================================================================================================
+C. 不变量：未覆盖 / 历史复发 / 降级模式 / 记忆库 / 只读 / 正常态
+================================================================================================
+[PASS] C-01 uncovered  未覆盖判定=True｜结论=知识库未覆盖当前现象，以下仅提供通用安全处置原则，请联系…｜步骤来源=['KB-GEN-000']｜警告 9 条
+[PASS] C-02 history_recurrence  第二次诊断引用历史=有（引用 #14 / 命中 KB-CNC-001）
+[PASS] C-03 degraded_mode  mode=rule｜degraded=True｜七要素齐全=True｜降级原因：['未配置 LLM_API_BASE / LLM_API_KEY / LLM_MODEL']
+[PASS] C-04 feedback_effect  反馈“未解决”后重排：[('KB-CNC-002', '40%'), ('KB-CNC-001', '32%'), ('KB-CNC-003', '28%')]
+[PASS] C-05 normal_no_alarm  清除全部故障后各设备报警码：{'CNC-01': [], 'CNC-02': [], 'AIR-01': []}
+[PASS] C-06 readonly  数据源与客户端均为只读，无写入/控制调用
+[PASS] C-07 air_node_independent  AIR-01 与 CNC 点位交集：{'status': ['air_compressor', 'cnc'], 'alarm_code': ['air_compressor', 'cnc']}（status/alarm_code 为设计内共用派生字段）
+
+================================================================================================
+D. 阈值可达性：对每一个阈值项（warn/alarm）与每一个报警码穷举全部故障剧本做注入模拟
+================================================================================================
+设备类型            测点                          预警阈值      报警阈值      实测最佳            可达  备注
+--------------------------------------------------------------------------------------------------------
+cnc             spindle_temp                65.0      80.0     82.99    warn+alarm  由 spindle_overheat 触发
+cnc             spindle_vib                  4.5       7.0      7.50    warn+alarm  由 spindle_vibration 触发
+cnc             spindle_load                85.0      95.0     95.46    warn+alarm  由 spindle_overload 触发
+cnc             spindle_speed               0.12       0.2   5210.22          warn  由 spindle_overload 触发
+cnc             feed_rate                    0.3       0.5    379.16    warn+alarm  由 spindle_overload 触发
+cnc             inlet_air_pressure          0.55      0.45      0.43    warn+alarm  由 cnc_air_low 触发
+cnc             coolant_flow                12.0       8.0      7.56    warn+alarm  由 spindle_overheat 触发
+air_compressor  discharge_temp              95.0     105.0    107.90    warn+alarm  由 air_overheat 触发
+air_compressor  outlet_pressure             0.62       0.5      0.50    warn+alarm  由 air_pressure_low 触发
+air_compressor  oil_temp                    90.0     100.0     91.29          warn  由 air_overheat 触发
+air_compressor  motor_current               42.0      48.0     42.59          warn  由 air_pressure_low 触发
+air_compressor  load_rate                   92.0      98.0     92.72          warn  由 air_pressure_low 触发
+air_compressor  run_hours                 3800.0    4000.0         -           不可达  无剧本驱动
+--------------------------------------------------------------------------------------------------------
+
+报警码       测点                          要求等级      可达  备注
+----------------------------------------------------------------------
+ALM-101   spindle_temp               alarm       是  spindle_overheat
+ALM-102   spindle_vib                alarm       是  spindle_vibration
+ALM-103   spindle_load               alarm       是  spindle_overload
+ALM-104   inlet_air_pressure          warn       是  cnc_air_low
+ALM-105   coolant_flow                warn       是  spindle_overheat
+ALM-106   feed_rate                  alarm       是  spindle_overload
+ALM-201   discharge_temp             alarm       是  air_overheat
+ALM-202   outlet_pressure             warn       是  air_pressure_low
+ALM-203   oil_temp                   alarm       否  无剧本可触发
+ALM-204   motor_current              alarm       否  无剧本可触发
+ALM-205   run_hours                   warn       否  无剧本可触发
+----------------------------------------------------------------------
+[FAIL] D-00 reachability_summary  阈值/报警码可达性 28/37
+
+  以下阈值项注入后仍触发不了（逐条列出根因，不做静默修改）：
+    - cnc.spindle_speed.alarm（阈值 0.2）→ 剧本目标值不足：spindle_overload 实测最佳 5210.216，未越过0.2（方向 deviation）
+    - air_compressor.oil_temp.alarm（阈值 100.0）→ 剧本目标值不足：air_overheat 实测最佳 91.286，未越过100.0（方向 above）
+    - air_compressor.motor_current.alarm（阈值 48.0）→ 剧本目标值不足：air_pressure_low 实测最佳 42.586，未越过48.0（方向 above）
+    - air_compressor.load_rate.alarm（阈值 98.0）→ 剧本目标值不足：air_pressure_low 实测最佳 92.717，未越过98.0（方向 above）
+    - air_compressor.run_hours.warn（阈值 3800.0）→ 剧本缺失：无任何故障剧本写入该测点（基线 
+    - air_compressor.run_hours.alarm（阈值 4000.0）→ 剧本缺失：无任何故障剧本写入该测点（基线 
+    - ALM-203（air_compressor.oil_temp ≥ alarm）→ 剧本目标值不足：oil_temp 达不到 alarm 级（阈值 100.0）
+    - ALM-204（air_compressor.motor_current ≥ alarm）→ 剧本目标值不足：motor_current 达不到 alarm 级（阈值 48.0）
+    - ALM-205（air_compressor.run_hours ≥ warn）→ 剧本缺失：无故障剧本写入该测点
+[PASS] E-01 memory_isolation  正式库行数 6 → 6（应不变）；本次自测写入临时库 17 条
+
+================================================================================================
+汇总
+================================================================================================
+  A 段：8/9
+  B 段：4/4
+  C 段：7/7
+  D 段：0/1
+  E 段：1/1
+
+  总计：20/22  失败 2 项
+
+  失败明细：
+    - A-03 spindle_bearing_wear: Top1=KB-CNC-001(38%)｜设备=CNC-02｜报警=ALM-101、ALM-102｜检出=0.03s｜主轴温度=82.946°C，主轴振动=7.898mm/s → 期望 Top1=KB-CNC-006/设备=CNC-02/报警⊇['ALM-101', 'ALM-102']｜实际 Top1=KB-CNC-001(38%)/CNC-02/ALM-101、ALM-102
+    - D-00 reachability_summary: 阈值/报警码可达性 28/37
+
+  临时目录：C:\Users\312\AppData\Local\Temp\cncops_selftest_fbkvofpb（自测结束清理）

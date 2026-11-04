@@ -1,0 +1,43 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 02</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>六步诊断引擎 · 不依赖大模型</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>ENGINE</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:14, padding:'14px 22px', background:'rgba(34,211,238,0.10)', borderRadius:12, border:'1px solid rgba(34,211,238,0.35)' }}>
+      <FAIcon name='cogs' style={{ fill:'#22D3EE', width:28, height:28 }} />
+      <Text style={{ fontSize:23, color:'#E6EEF5', fontWeight:'bold' }}>固定六步，<Text style={{ color:'#22D3EE' }}>不依赖大模型也能跑完整流程</Text></Text>
+      <Text style={{ fontSize:16, color:'#8FA3B8', marginLeft:'auto' }}>大模型只是锦上添花</Text>
+    </Box>
+    <Box style={{ flexDirection:'row', gap:10, alignItems:'stretch' }}>
+      {[
+        {n:'1', t:'听懂口语', d:'"一号机发烫"这类大白话也能定位到设备'},
+        {n:'2', t:'取实时数据', d:'只读抓取当前测点，不碰设备一个开关'},
+        {n:'3', t:'比对阈值', d:'实测值 vs 阈值，报警缘由可追溯'},
+        {n:'4', t:'检索知识库', d:'召回对应处置步骤，每步带编号可溯源'},
+        {n:'5', t:'生成七块报告', d:'结论先行，证据 / 原因 / 步骤 / 警告齐全'},
+        {n:'6', t:'分步排查', d:'L1→L2→L3，危险步骤强制安全确认'},
+      ].map((s, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', alignItems:'center', padding:'20px 10px', background:'rgba(46,92,138,0.18)', borderRadius:12, border:'1px solid rgba(46,92,138,0.5)' }}>
+          <Box style={{ width:46, height:46, borderRadius:23, background:'#22D3EE', alignItems:'center', justifyContent:'center', marginBottom:14 }}>
+            <Text style={{ fontSize:24, color:'#0F1B2D', fontWeight:'bold' }}>{s.n}</Text>
+          </Box>
+          <Text style={{ fontSize:17, color:'#E6EEF5', fontWeight:'bold', textAlign:'center' }}>{s.t}</Text>
+          <Text style={{ fontSize:13, color:'#9FB6CC', textAlign:'center', lineHeight:1.5, marginTop:8 }}>{s.d}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12, padding:'14px 20px', background:'rgba(46,92,138,0.20)', borderRadius:10, border:'1px solid rgba(46,92,138,0.55)' }}>
+      <FAIcon name='shield' style={{ fill:'#22D3EE', width:24, height:24 }} />
+      <Text style={{ fontSize:18, color:'#CDE6F5', lineHeight:1.5 }}>大模型挂了、断网了、没配 Key，<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>系统照样出完整报告</Text>——这就是我们敢说安全可信的底气。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>06 / 15</Text>
+  </Box>
+</Slide>

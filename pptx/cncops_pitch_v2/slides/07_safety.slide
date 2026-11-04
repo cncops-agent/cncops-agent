@@ -1,0 +1,34 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#FF4D4F' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#FF4D4F', fontWeight:'bold', letterSpacing:2 }}>PART 02</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>绝对安全边界（只读红线 + LOTO）★</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>SAFETY · 重点页</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ width:600, justifyContent:'center', alignItems:'center', background:'rgba(255,255,255,0.03)', borderRadius:14, border:'1px solid rgba(255,77,79,0.4)', padding:14 }}>
+      <Image src='assets/l3_confirm.png' style={{ width:'100%', height:520, objectFit:'contain', borderRadius:10 }} />
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', justifyContent:'center', gap:16 }}>
+      <Box style={{ flexDirection:'row', gap:12, alignItems:'center' }}>
+        <FAIcon name='shield' style={{ fill:'#FF4D4F', width:30, height:30 }} />
+        <Text style={{ fontSize:24, color:'#E6EEF5', fontWeight:'bold' }}>只读红线：永远不碰设备</Text>
+      </Box>
+      <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.6 }}>OPC-UA 客户端<Text style={{ color:'#FF4D4F', fontWeight:'bold' }}>没有任何写方法</Text>，有回归测试守着；界面上没有"启动 / 停机 / 改参数"按钮；"注入故障"只改仿真数据，是演示夹具。</Text>
+      <Box style={{ flexDirection:'row', gap:12, alignItems:'center' }}>
+        <FAIcon name='exclamation-triangle' style={{ fill:'#FF4D4F', width:26, height:26 }} />
+        <Text style={{ fontSize:24, color:'#E6EEF5', fontWeight:'bold' }}>LOTO：代码级强制拦截</Text>
+      </Box>
+      <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.6 }}>带电 / 高压 / 拆机步骤<Text style={{ color:'#FF4D4F', fontWeight:'bold' }}>强制升 L3 并弹出挂牌上锁确认</Text>，位于渲染链最后一步，大模型无权降级；遮不掉、跳不过，必须人确认。</Text>
+      <Box style={{ padding:'16px 18px', background:'rgba(255,77,79,0.12)', borderRadius:10, border:'1px solid rgba(255,77,79,0.4)' }}>
+        <Text style={{ fontSize:17, color:'#FFC9C9', lineHeight:1.55, fontWeight:'bold' }}>"敢进车间，靠的就是永远不碰设备。"</Text>
+      </Box>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>07 / 15</Text>
+  </Box>
+</Slide>

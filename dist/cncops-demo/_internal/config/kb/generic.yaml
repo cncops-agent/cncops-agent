@@ -1,0 +1,75 @@
+# 通用条目：仅用于"知识库未覆盖"时的通用安全建议，以及无明确异常时的观察建议
+entries:
+  - id: "KB-GEN-000"
+    code: "F900"
+    title: "现象未覆盖时的通用安全处置原则"
+    device_types: ["cnc", "air_compressor"]
+    alarm_codes: []
+    points: []
+    symptoms: ["冒烟", "焦糊味", "糊味", "烧焦", "漏电", "起火", "火花", "异味的通用处置", "不清楚", "不对劲"]
+    base_probability: 0.4
+    conclusion: "当前现象在知识库中无对应条目，仅提供通用安全处置原则，禁止凭经验盲目拆解。"
+    causes:
+      - text: "现象未被知识库覆盖，原因需现场专业人员确认"
+        basis: "知识库检索未达到命中阈值"
+    steps:
+      - level: "L1"
+        text: "立即按下急停，停止设备运行，保持现场原状并拍照记录现象与位置。"
+        tools: ["手机（拍照）"]
+        materials: []
+        eta_min: 2
+      - level: "L1"
+        text: "疏散周围人员，保持通风，出现冒烟、焦糊味或火花时严禁继续送电试机。"
+        tools: ["警戒隔离带"]
+        materials: []
+        eta_min: 5
+      - level: "L1"
+        text: "记录发生时间、报警码、正在执行的工序与最近一次保养时间，形成工单上报。"
+        tools: ["工单/报修系统", "设备点检表"]
+        materials: []
+        eta_min: 10
+      - level: "L2"
+        text: "在断电挂牌上锁（LOTO）前提下，做外观目视检查：有无烧灼痕迹、松动、渗漏，不做拆解。"
+        tools: ["手电筒", "个人锁具+挂牌（LOTO）"]
+        materials: []
+        eta_min: 20
+      - level: "L3"
+        text: "涉及拆机、带电、高压、主轴、液压的检查与修复，必须由专业工程师或设备厂家处理。"
+        tools: ["工程师专用：万用表/兆欧表（需持证）", "设备厂家联系方式"]
+        materials: ["视检查结果另定"]
+        eta_min: 240
+    safety:
+      - "出现冒烟、焦糊味、火花、漏电等迹象时，必须先断电再靠近，严禁带电查看。"
+      - "任何拆机、带电、高压、主轴、液压相关操作必须由专业工程师执行，并执行断电挂牌上锁（LOTO）。"
+      - "在未确认原因前不得复位报警反复启动，避免故障扩大。"
+
+  - id: "KB-GEN-001"
+    code: "F901"
+    title: "实时数据未见异常时的观察建议"
+    device_types: ["cnc", "air_compressor"]
+    alarm_codes: []
+    points: []
+    symptoms: ["没报警", "正常", "看看", "点检", "巡检"]
+    base_probability: 0.3
+    conclusion: "该设备实时数据未越过任何阈值，暂未检出异常，建议按观察项持续跟踪。"
+    causes:
+      - text: "间歇性故障，采集时刻恰好处于正常区间"
+        basis: "用户反馈现象存在但实时数据正常"
+    steps:
+      - level: "L1"
+        text: "保持设备运行，按 5 分钟间隔记录关键测点读数，捕捉间歇性异常。"
+        tools: ["设备点检表", "秒表"]
+        materials: []
+        eta_min: 30
+      - level: "L1"
+        text: "确认用户描述的工况（转速、材质、刀具）与当前是否一致。"
+        tools: ["工艺卡片"]
+        materials: []
+        eta_min: 10
+      - level: "L2"
+        text: "若现象复现，立即保存数据快照并重新发起诊断。"
+        tools: ["本页面「诊断」入口"]
+        materials: []
+        eta_min: 10
+    safety:
+      - "设备运转期间不得打开防护门或触碰运动部件。"

@@ -1,0 +1,40 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 04</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>三屏看全貌 · 真实产品界面</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>DEMO</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', gap:24, height:478 }}>
+      <Box style={{ width:760, justifyContent:'center', alignItems:'center', background:'rgba(255,255,255,0.03)', borderRadius:14, border:'1px solid rgba(255,255,255,0.08)', padding:10 }}>
+        <Image src='assets/report_card.png' style={{ width:'100%', height:452, objectFit:'contain', borderRadius:8 }} />
+      </Box>
+      <Box style={{ flex:1, flexDirection:'column', gap:12, justifyContent:'center' }}>
+        {[
+          {n:'①', t:'左侧 · 报警置顶', d:'报警设备整条变红并自动置顶，3 台里哪台出问题一眼可见。'},
+          {n:'②', t:'中间 · 口语输入', d:'"这台机器怎么了？说大白话就行"——一句话就能发起诊断。'},
+          {n:'③', t:'右侧 · 七块报告', d:'结论 / 数据证据 / 原因排序 / 排查步骤 / 警告 / 来源 / 历史；证据带实测值 vs 阈值比对。'},
+        ].map((it, i) => (
+          <Box key={i} style={{ flexDirection:'row', gap:12, alignItems:'flex-start', padding:'16px 16px', background: i === 2 ? 'rgba(34,211,238,0.10)' : 'rgba(255,255,255,0.04)', borderRadius:12, border: i === 2 ? '1px solid rgba(34,211,238,0.35)' : '1px solid rgba(255,255,255,0.08)' }}>
+            <Text style={{ fontSize:24, color:'#22D3EE', fontWeight:'bold' }}>{it.n}</Text>
+            <Box>
+              <Text style={{ fontSize:17, color:'#E6EEF5', fontWeight:'bold' }}>{it.t}</Text>
+              <Text style={{ fontSize:13.5, color:'#9FB6CC', lineHeight:1.5, marginTop:5 }}>{it.d}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12, padding:'12px 20px', background:'rgba(46,92,138,0.20)', borderRadius:10, border:'1px solid rgba(46,92,138,0.55)' }}>
+      <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:22, height:22 }} />
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.5 }}>同一套响应式界面，<Text style={{ color:'#22D3EE', fontWeight:'bold' }}>车间平板 / 网页端通用</Text>；实测 30 台设备列表也不缩放、不变形。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>09 / 15</Text>
+  </Box>
+</Slide>

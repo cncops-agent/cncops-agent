@@ -1,0 +1,62 @@
+# 报警码表：报警码不独立随机产生，而是由 rules.derive_alarm_codes() 从实时数据派生，
+# 保证"报警码与数据永远一致"（规避旧项目报警码误报问题）。
+# min_severity: warn = 预警级；alarm = 报警级
+schema_version: 1
+
+codes:
+  - code: "ALM-101"
+    device_types: ["cnc"]
+    point: "spindle_temp"
+    min_severity: "alarm"
+    message: "主轴温度过高"
+  - code: "ALM-102"
+    device_types: ["cnc"]
+    point: "spindle_vib"
+    min_severity: "alarm"
+    message: "主轴振动异常"
+  - code: "ALM-103"
+    device_types: ["cnc"]
+    point: "spindle_load"
+    min_severity: "alarm"
+    message: "主轴负载过高"
+  - code: "ALM-104"
+    device_types: ["cnc"]
+    point: "inlet_air_pressure"
+    min_severity: "warn"
+    message: "进气压力不足"
+  - code: "ALM-105"
+    device_types: ["cnc"]
+    point: "coolant_flow"
+    min_severity: "warn"
+    message: "冷却液流量偏低"
+  - code: "ALM-106"
+    device_types: ["cnc"]
+    point: "feed_rate"
+    min_severity: "alarm"
+    message: "进给速度异常（疑似闷车/卡滞）"
+
+  - code: "ALM-201"
+    device_types: ["air_compressor"]
+    point: "discharge_temp"
+    min_severity: "alarm"
+    message: "空压机排气温度过高"
+  - code: "ALM-202"
+    device_types: ["air_compressor"]
+    point: "outlet_pressure"
+    min_severity: "warn"
+    message: "空压机出口压力不足"
+  - code: "ALM-203"
+    device_types: ["air_compressor"]
+    point: "oil_temp"
+    min_severity: "alarm"
+    message: "空压机润滑油温度过高"
+  - code: "ALM-204"
+    device_types: ["air_compressor"]
+    point: "motor_current"
+    min_severity: "alarm"
+    message: "空压机电机电流过高"
+  - code: "ALM-205"
+    device_types: ["air_compressor"]
+    point: "run_hours"
+    min_severity: "warn"
+    message: "空压机接近保养周期"

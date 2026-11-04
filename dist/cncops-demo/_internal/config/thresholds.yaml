@@ -1,0 +1,102 @@
+# 阈值集中管理：所有判定阈值与仿真量程同源，scripts/check_thresholds.py 会自检"注入故障后必定越限"
+# direction: above = 越高越危险；below = 越低越危险；deviation = 与额定值偏差比例越限
+schema_version: 1
+
+cnc:
+  spindle_temp:
+    label: "主轴温度"
+    unit: "°C"
+    direction: "above"
+    warn: 65.0
+    alarm: 80.0
+    hint: "超过 80°C 需立即停机检查冷却与润滑"
+  spindle_vib:
+    label: "主轴振动"
+    unit: "mm/s"
+    direction: "above"
+    warn: 4.5
+    alarm: 7.0
+    hint: "超过 7.0mm/s 多为刀具磨损、主轴轴承或动平衡问题"
+  spindle_load:
+    label: "主轴负载"
+    unit: "%"
+    direction: "above"
+    warn: 85.0
+    alarm: 95.0
+    hint: "持续高负载易导致闷车与主轴过热"
+  spindle_speed:
+    label: "主轴转速"
+    unit: "r/min"
+    direction: "deviation"
+    nominal: 6000.0
+    warn: 0.12
+    alarm: 0.20
+    hint: "与额定转速偏差过大说明变频器或负载异常"
+  feed_rate:
+    label: "进给速度"
+    unit: "mm/min"
+    direction: "deviation"
+    nominal: 800.0
+    warn: 0.30
+    alarm: 0.50
+    hint: "进给异常下降常见于闷车、导轨卡滞或伺服过载"
+  inlet_air_pressure:
+    label: "本机进气压力"
+    unit: "MPa"
+    direction: "below"
+    warn: 0.55
+    alarm: 0.45
+    hint: "气压不足会导致换刀/夹紧动作失败"
+  coolant_flow:
+    label: "冷却液流量"
+    unit: "L/min"
+    direction: "below"
+    warn: 12.0
+    alarm: 8.0
+    hint: "冷却液不足直接引发主轴与刀具过热"
+
+air_compressor:
+  discharge_temp:
+    label: "排气温度"
+    unit: "°C"
+    direction: "above"
+    warn: 95.0
+    alarm: 105.0
+    hint: "排气高温会触发停机保护，多为冷却不良或油路问题"
+  outlet_pressure:
+    label: "出口压力"
+    unit: "MPa"
+    direction: "below"
+    warn: 0.62
+    alarm: 0.50
+    hint: "压力上不去会导致全线气动元件动作无力"
+  oil_temp:
+    label: "润滑油温度"
+    unit: "°C"
+    direction: "above"
+    warn: 90.0
+    alarm: 100.0
+    hint: "油温过高加速润滑油劣化"
+  motor_current:
+    label: "电机电流"
+    unit: "A"
+    direction: "above"
+    warn: 42.0
+    alarm: 48.0
+    hint: "电流偏高通常伴随加载率过高或电压异常"
+  load_rate:
+    label: "加载率"
+    unit: "%"
+    direction: "above"
+    warn: 92.0
+    # 原为 98.0：加载率物理上限 100%，在 1% 噪声下最大可达裕度仅 2%（< 3σ=3%），
+    # 该阈值在任何剧本下都无法"稳定越限"。按满载判定惯例下调到 95.0（自测 D/守门脚本双验证）
+    alarm: 95.0
+    hint: "长期满载说明选型偏小或管网泄漏"
+  run_hours:
+    label: "累计运行小时"
+    unit: "h"
+    direction: "above"
+    warn: 3800.0
+    alarm: 4000.0
+    hint: "接近保养周期需安排换油与滤芯更换"

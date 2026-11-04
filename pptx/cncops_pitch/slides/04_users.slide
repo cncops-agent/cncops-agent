@@ -1,0 +1,39 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 01</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>目标用户与典型场景</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>WHO</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ width:320, justifyContent:'center' }}>
+      <Text style={{ fontSize:30, color:'#22D3EE', fontWeight:'bold' }}>谁在用？</Text>
+      <Text style={{ fontSize:18, color:'#9FB6CC', lineHeight:1.6, marginTop:14 }}>系统把"设备医生"拆成三层能力，<Text style={{ color:'#E6EEF5', fontWeight:'bold' }}>不同角色各取所需</Text>，既不替代人，也不依赖专家在场。</Text>
+      <Box style={{ marginTop:22, padding:'16px 18px', background:'rgba(46,92,138,0.18)', borderRadius:12, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.55 }}>典型场景：夜班突发报警 · 老师傅请假 · 新工人不敢拆机 · 老板想知"哪台最爱坏"</Text>
+      </Box>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', gap:0, justifyContent:'center' }}>
+      <Table
+        style={{ width:'100%', height:330 }}
+        defaultTextStyle={{ fontSize:16, color:'#E6EEF5' }}
+        defaultCellStyle={{ border:{ left:{width:1,color:'rgba(255,255,255,0.08)'}, right:{width:1,color:'rgba(255,255,255,0.08)'}, top:{width:1,color:'rgba(255,255,255,0.08)'}, bottom:{width:1,color:'rgba(255,255,255,0.08)'} }, background:{color:'rgba(255,255,255,0.03)'} }}
+        cells={[
+          [
+            { text:'角色', textStyle:{ bold:true, color:'#0F1B2D' }, cellStyle:{ background:{color:'#22D3EE'} } },
+            { text:'系统给什么', textStyle:{ bold:true, color:'#0F1B2D' }, cellStyle:{ background:{color:'#22D3EE'} } },
+          ],
+          [ { text:'操作工', textStyle:{bold:true,color:'#22D3EE'} }, { text:'开机旁做 L1：一句话诊断 + 分级步骤，戴手套也能点' } ],
+          [ { text:'维修工', textStyle:{bold:true,color:'#22D3EE'} }, { text:'随叫随到做 L2：完整七块报告 + 相似历史复发引用' } ],
+          [ { text:'运维负责人', textStyle:{bold:true,color:'#22D3EE'} }, { text:'看经验沉淀、停机统计与台账，可一键导出 Excel' } ],
+        ]}
+      />
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>04 / 20</Text>
+  </Box>
+</Slide>

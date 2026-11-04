@@ -1,0 +1,37 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 03</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>经验沉淀闭环（记忆库）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>MEMORY</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ width:600, justifyContent:'center', alignItems:'center', background:'rgba(255,255,255,0.03)', borderRadius:14, border:'1px solid rgba(255,255,255,0.08)', padding:14 }}>
+      <Image src='assets/insights_stats.png' style={{ width:'100%', height:520, objectFit:'contain', borderRadius:10 }} />
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', justifyContent:'center', gap:16 }}>
+      <Text style={{ fontSize:22, color:'#E6EEF5', fontWeight:'bold' }}>经验从个人脑子搬进系统</Text>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='arrow-right' style={{ fill:'#22D3EE', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>每次诊断、每次反馈落库；故障按"指纹"（设备+报警码+超标测点）判定复发</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='arrow-right' style={{ fill:'#22D3EE', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>同设备 30 天同故障 ≥2 次自动标黄提醒、≥3 次标红并提示"禁止反复复位继续生产"</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='arrow-right' style={{ fill:'#22D3EE', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>「经验」页按设备统计高频故障、平均处理时长、累计停机，可导出 Excel</Text>
+      </Box>
+      <Box style={{ marginTop:4, padding:'14px 16px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.5 }}>话术："老板最关心的'停机账'，系统帮他算清楚了。"</Text>
+      </Box>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>14 / 20</Text>
+  </Box>
+</Slide>

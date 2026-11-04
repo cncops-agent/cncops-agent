@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cncops-agent · 封面样式预览</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: #EAEEF2;
+    color: #1A2733;
+    padding: 40px 32px 64px;
+  }
+  .page-head { max-width: 1080px; margin: 0 auto 36px; }
+  .page-head h1 { font-size: 26px; font-weight: 700; letter-spacing: 1px; }
+  .page-head p { margin-top: 10px; font-size: 15px; color: #5A6B7B; line-height: 1.7; }
+  .grid {
+    max-width: 1080px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+  }
+  .card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 22px rgba(20,40,70,0.10); }
+  .card .meta { padding: 16px 18px 20px; }
+  .card .meta .tag { display: inline-block; font-size: 12px; letter-spacing: 1px; color: #2E6CA8; background: #E6F1FB; padding: 3px 10px; border-radius: 20px; }
+  .card .meta h2 { font-size: 18px; margin: 10px 0 6px; font-weight: 700; }
+  .card .meta .desc { font-size: 13px; color: #5A6B7B; line-height: 1.6; }
+  .card .meta .fit { font-size: 12px; color: #8A99A8; margin-top: 8px; }
+
+  /* 16:9 封面画布 */
+  .cover { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; }
+
+  /* 方案 A：深色工业科技风 */
+  .cv-a { background: #0F1B2D; color: #E6EDF5; }
+  .cv-a .grid-bg { position:absolute; inset:0; background-image: linear-gradient(rgba(46,92,138,0.16) 1px, transparent 1px), linear-gradient(90deg, rgba(46,92,138,0.16) 1px, transparent 1px); background-size: 32px 32px; }
+  .cv-a .topbar { position:absolute; top:0; left:0; right:0; height:5px; background: linear-gradient(90deg,#22D3EE,#2E5C8A); }
+  .cv-a .tag { position:absolute; top:26px; left:34px; font-size:12px; letter-spacing:2px; color:#22D3EE; }
+  .cv-a .shield { position:absolute; top:22px; right:30px; border:1px solid #22D3EE; color:#22D3EE; font-size:12px; padding:6px 11px; border-radius:5px; }
+  .cv-a .title { position:absolute; top:118px; left:34px; font-size:34px; font-weight:700; line-height:1.22; }
+  .cv-a .title .hl { color:#22D3EE; }
+  .cv-a .sub { position:absolute; top:230px; left:34px; font-size:14px; color:#9FB3C8; }
+  .cv-a .foot { position:absolute; bottom:24px; left:34px; font-size:12px; color:#6B7E93; }
+
+  /* 方案 B：蓝色渐变商务风 */
+  .cv-b { background: linear-gradient(135deg,#16385E 0%,#2E6CA8 55%,#3E8FD0 100%); color:#fff; }
+  .cv-b .ring1 { position:absolute; right:-70px; top:-70px; width:260px; height:260px; border-radius:50%; background:rgba(255,255,255,0.10); }
+  .cv-b .ring2 { position:absolute; right:70px; bottom:-110px; width:220px; height:220px; border-radius:50%; background:rgba(255,255,255,0.07); }
+  .cv-b .tag { position:absolute; top:28px; left:38px; font-size:12px; letter-spacing:3px; opacity:0.9; }
+  .cv-b .title { position:absolute; top:128px; left:38px; font-size:32px; font-weight:700; line-height:1.25; }
+  .cv-b .rule { position:absolute; top:236px; left:38px; width:56px; height:4px; background:#9FE3FF; }
+  .cv-b .sub { position:absolute; top:256px; left:38px; font-size:14px; opacity:0.92; }
+  .cv-b .foot { position:absolute; bottom:24px; left:38px; font-size:12px; opacity:0.82; }
+
+  /* 方案 C：极简留白风 */
+  .cv-c { background:#F7F9FB; color:#16263A; }
+  .cv-c .side { position:absolute; top:0; left:0; width:8px; height:100%; background:#22D3EE; }
+  .cv-c .tag { position:absolute; top:32px; left:52px; font-size:12px; letter-spacing:3px; color:#5A6B7B; }
+  .cv-c .title { position:absolute; top:124px; left:52px; font-size:36px; font-weight:700; line-height:1.2; }
+  .cv-c .rule { position:absolute; top:236px; left:52px; width:72px; height:3px; background:#16263A; }
+  .cv-c .sub { position:absolute; top:256px; left:52px; font-size:14px; color:#3D4F61; }
+  .cv-c .foot { position:absolute; bottom:24px; left:52px; font-size:12px; color:#8A99A8; }
+  .cv-c .circle { position:absolute; right:58px; top:108px; width:110px; height:110px; border:2px solid #22D3EE; border-radius:50%; }
+  .cv-c .dot { position:absolute; right:96px; top:146px; width:38px; height:38px; background:#22D3EE; border-radius:50%; opacity:0.28; }
+
+  /* 方案 D：青色数据网格风 */
+  .cv-d { background: linear-gradient(160deg,#0B2233 0%,#0E2E44 60%,#0A1A28 100%); color:#E6EDF5; }
+  .cv-d .grid-bg { position:absolute; inset:0; background-image: linear-gradient(rgba(34,211,238,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.10) 1px, transparent 1px); background-size: 36px 36px; }
+  .cv-d .tag { position:absolute; top:26px; left:34px; font-size:12px; letter-spacing:2px; color:#22D3EE; }
+  .cv-d .mon { position:absolute; right:30px; top:30px; width:120px; height:64px; border:1px solid rgba(34,211,238,0.5); border-radius:6px; padding:8px 10px; }
+  .cv-d .mon .l1 { font-size:10px; color:#7FD4E6; }
+  .cv-d .mon .l2 { font-size:18px; font-weight:700; color:#22D3EE; margin-top:4px; }
+  .cv-d .mon .bar { margin-top:6px; height:4px; background:linear-gradient(90deg,#22D3EE,#2E5C8A); border-radius:2px; }
+  .cv-d .title { position:absolute; top:128px; left:34px; font-size:32px; font-weight:700; line-height:1.22; }
+  .cv-d .title .hl { color:#22D3EE; }
+  .cv-d .sub { position:absolute; top:228px; left:34px; font-size:14px; color:#9FB3C8; }
+  .cv-d .foot { position:absolute; bottom:24px; left:34px; font-size:12px; color:#6B7E93; }
+</style>
+</head>
+<body>
+  <div class="page-head">
+    <h1>cncops-agent · 封面样式预览</h1>
+    <p>三款不同视觉方向的封面样稿（均按 16:9 幻灯片比例绘制，文字为真实内容）。挑一个方向，我再据此铺整份路演 PPT。也可告诉我"要某两款的结合"或"再加一款"。</p>
+  </div>
+
+  <div class="grid">
+    <!-- 方案 A -->
+    <div class="card">
+      <div class="cover cv-a">
+        <div class="grid-bg"></div>
+        <div class="topbar"></div>
+        <div class="tag">cncops-agent · 只读诊断</div>
+        <div class="shield">只读 · READ-ONLY</div>
+        <div class="title">车间设备运维<br><span class="hl">AI 智能体</span></div>
+        <div class="sub">说句大白话，2 秒拿到 —— 该干什么 · 谁来干 · 怎么干才安全</div>
+        <div class="foot">仿真产线验证版 · 2026</div>
+      </div>
+      <div class="meta">
+        <span class="tag">方案 A</span>
+        <h2>深色工业科技风</h2>
+        <div class="desc">深蓝灰底 + 细网格 + 青色高亮，右上"只读"盾牌徽标。硬核、工业感强，最贴合项目"车间 / 只读 / 可信"的基因。</div>
+        <div class="fit">适合：技术评委、工业类比赛、强调安全可信</div>
+      </div>
+    </div>
+
+    <!-- 方案 B -->
+    <div class="card">
+      <div class="cover cv-b">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="tag">FACTORY AI · cncops-agent</div>
+        <div class="title">车间设备运维<br>AI 智能体诊断系统</div>
+        <div class="rule"></div>
+        <div class="sub">说句大白话，2 秒给出结论、证据与分级处置步骤</div>
+        <div class="foot">只读诊断 · 全程不碰设备 · 仿真产线验证版 2026</div>
+      </div>
+      <div class="meta">
+        <span class="tag">方案 B</span>
+        <h2>蓝色渐变商务风</h2>
+        <div class="desc">蓝调渐变 + 留白圆形光斑，干净、正式、有"商业计划书"质感。弱化工业硬核，强化专业与可信赖感。</div>
+        <div class="fit">适合：投资人 / 创业路演、企业客户汇报</div>
+      </div>
+    </div>
+
+    <!-- 方案 C -->
+    <div class="card">
+      <div class="cover cv-c">
+        <div class="side"></div>
+        <div class="tag">cncops-agent · 只读诊断</div>
+        <div class="title">车间设备运维<br>AI 智能体</div>
+        <div class="rule"></div>
+        <div class="sub">说句大白话，2 秒拿到该干什么、谁来干、怎么干才安全</div>
+        <div class="foot">仿真产线验证版 · 2026</div>
+        <div class="circle"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="meta">
+        <span class="tag">方案 C</span>
+        <h2>极简留白风</h2>
+        <div class="desc">浅底深字 + 单一青色强调 + 大面积留白，左侧一条色带、一个几何圆点。克制、现代、高级感，信息聚焦。</div>
+        <div class="fit">适合：设计感强的场合、年轻评委、国际风</div>
+      </div>
+    </div>
+
+    <!-- 方案 D -->
+    <div class="card">
+      <div class="cover cv-d">
+        <div class="grid-bg"></div>
+        <div class="tag">cncops-agent · 只读诊断</div>
+        <div class="mon">
+          <div class="l1">CNC-01 主轴温度</div>
+          <div class="l2">91.7°C</div>
+          <div class="bar"></div>
+        </div>
+        <div class="title">车间设备运维<br><span class="hl">AI 智能体</span></div>
+        <div class="sub">实时监测 · 只读诊断 · 2 秒出结论证据与分级步骤</div>
+        <div class="foot">仿真产线验证版 · 2026</div>
+      </div>
+      <div class="meta">
+        <span class="tag">方案 D</span>
+        <h2>青色数据网格风</h2>
+        <div class="desc">深青底 + 数据网格 + 右上"监测卡"（实时温度 + 进度条），直接预告"诊断看板"的核心卖点，科技感最足。</div>
+        <div class="fit">适合：突出 AI / 数据能力、产品发布会</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

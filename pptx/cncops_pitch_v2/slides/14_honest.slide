@@ -1,0 +1,48 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 05</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>诚实边界 · 用真诚打消疑虑</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>TRUST</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:34 }}>
+    <Box style={{ width:320, justifyContent:'space-between', paddingTop:14, paddingBottom:14 }}>
+      <FAIcon name='clipboard-check' style={{ fill:'#22D3EE', width:36, height:36 }} />
+      <Text style={{ fontSize:26, color:'#E6EEF5', fontWeight:'bold', marginTop:12 }}>可当场验证</Text>
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.7, marginTop:14 }}>· <Text style={{ color:'#22D3EE', fontWeight:'bold' }}>python tests/selftest.py</Text>（82/82）</Text>
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.7 }}>· <Text style={{ color:'#22D3EE', fontWeight:'bold' }}>python scripts/layout_check.py</Text>（66/66）</Text>
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.7 }}>· 3 分钟现场演示脚本</Text>
+      <Box style={{ marginTop:18, padding:'14px 16px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.5 }}>安装包可离线现场跑，评委随时让我重放一遍。</Text>
+      </Box>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', justifyContent:'space-between', gap:12, paddingTop:16, paddingBottom:16 }}>
+      <Text style={{ fontSize:22, color:'#FF4D4F', fontWeight:'bold' }}>诚实的边界（主动讲，加分项）</Text>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='exclamation-circle' style={{ fill:'#FF4D4F', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>目前是<Text style={{ color:'#FF4D4F', fontWeight:'bold' }}>仿真数据，未接真实设备</Text>，尚无真实工厂落地案例</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='exclamation-circle' style={{ fill:'#FF4D4F', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>故障覆盖 11 类、知识库 12 条，覆盖外明说"未覆盖"不硬编</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='exclamation-circle' style={{ fill:'#FF4D4F', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>语音输入依赖浏览器 Web Speech API（离线不可用，属环境限制）</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='exclamation-circle' style={{ fill:'#FF4D4F', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>大模型增强已真实验证，无 Key 则规则引擎独立工作</Text>
+      </Box>
+      <Box style={{ marginTop:2, padding:'12px 16px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.5 }}>话术："我们如实讲能做到的和暂时做不到的——因为敢进车间，先得敢说真话。"</Text>
+      </Box>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>14 / 15</Text>
+  </Box>
+</Slide>

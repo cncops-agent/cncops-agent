@@ -1,0 +1,60 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 03</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>一线实操流程 · 说句大白话就行</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>FLOW</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:24, padding:'16px 26px', background:'rgba(34,211,238,0.10)', borderRadius:12, border:'1px solid rgba(34,211,238,0.35)' }}>
+      <Text style={{ fontSize:52, color:'#22D3EE', fontWeight:'bold', lineHeight:1 }}>2 秒</Text>
+      <Box style={{ width:1, height:52, background:'rgba(255,255,255,0.15)' }} />
+      <Text style={{ flex:1, fontSize:21, color:'#E6EEF5', lineHeight:1.5, fontWeight:'bold' }}>操作工不需要懂代码，说句大白话，2 秒拿到<Text style={{ color:'#22D3EE' }}>该干什么、怎么干才安全</Text>的指令。</Text>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'row', gap:10, alignItems:'stretch' }}>
+      {[
+        {n:'1', t:'口语输入', d:'"一号机发烫"', s:'不用选菜单、不用填编号', v:'一个输入框，会打字就会用'},
+        {n:'2', t:'实时数据抓取', d:'只读测点 + 阈值比对', s:'证据来自当前实测值', v:'系统自己读，无需手填'},
+        {n:'3', t:'检索知识库', d:'召回处置步骤', s:'每步带编号，可溯源', v:'步骤带编号，点开看依据'},
+        {n:'4', t:'生成七块报告', d:'结论 / 证据 / 原因 / 步骤', s:'还带相似历史引用', v:'结论在最上面，一眼看懂'},
+        {n:'5', t:'分步排查', d:'L1 → L2 → L3', s:'危险步骤强制 LOTO 确认', v:'每步一个按钮，做完打勾'},
+      ].map((f, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'column', alignItems:'center', padding:'20px 10px', background:'rgba(46,92,138,0.18)', borderRadius:12, border:'1px solid rgba(46,92,138,0.5)' }}>
+          <Box style={{ width:42, height:42, borderRadius:21, background:'#22D3EE', alignItems:'center', justifyContent:'center' }}>
+            <Text style={{ fontSize:22, color:'#0F1B2D', fontWeight:'bold' }}>{f.n}</Text>
+          </Box>
+          <Text style={{ fontSize:17, color:'#E6EEF5', fontWeight:'bold', textAlign:'center', marginTop:14 }}>{f.t}</Text>
+          <Text style={{ fontSize:13, color:'#22D3EE', textAlign:'center', marginTop:8 }}>{f.d}</Text>
+          <Text style={{ fontSize:12.5, color:'#9FB6CC', textAlign:'center', lineHeight:1.45, marginTop:8 }}>{f.s}</Text>
+          <Box style={{ marginTop:14, padding:'10px 10px', background:'rgba(34,211,238,0.08)', borderRadius:8, border:'1px solid rgba(34,211,238,0.22)' }}>
+            <Text style={{ fontSize:12.5, color:'#CDE6F5', lineHeight:1.4, textAlign:'center' }}>{f.v}</Text>
+          </Box>
+          <Box style={{ width:'100%', marginTop:'auto', padding:'9px 6px', background:'rgba(34,211,238,0.12)', borderRadius:6, alignItems:'center' }}>
+            <Text style={{ fontSize:12.5, color:'#22D3EE', fontWeight:'bold', textAlign:'center' }}>{i < 4 ? '下一步 →' : '✓ 流程闭环'}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'stretch', padding:'16px 20px', background:'rgba(255,255,255,0.04)', borderRadius:10, border:'1px solid rgba(255,255,255,0.08)' }}>
+      {[
+        { t:'不用懂代码', d:'会说话就会用，新人第一天上手' },
+        { t:'不用翻手册', d:'步骤自动带出来，还标了安全等级' },
+        { t:'不用怕出事', d:'危险动作必须人工挂牌确认才放行' },
+      ].map((it, i) => (
+        <Box key={i} style={{ flex:1, flexDirection:'row', alignItems:'center', justifyContent:'center', gap:12, padding:'0px 14px', borderRight:'1px solid rgba(255,255,255,0.10)' }}>
+          <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:22, height:22 }} />
+          <Box>
+            <Text style={{ fontSize:17, color:'#E6EEF5', fontWeight:'bold' }}>{it.t}</Text>
+            <Text style={{ fontSize:13, color:'#9FB6CC', lineHeight:1.4, marginTop:2 }}>{it.d}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>08 / 15</Text>
+  </Box>
+</Slide>

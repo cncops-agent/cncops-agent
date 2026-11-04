@@ -1,0 +1,138 @@
+# 仿真参数：基线 + 噪声 + 故障剧本
+# 关键约束：故障剧本的目标值必须显著越过阈值（check_thresholds 脚本会断言 margin），
+# 且噪声幅度小于 margin，避免"阈值不可达"导致演示时永远不报警。
+schema_version: 1
+
+# 采样与爬坡
+sample_interval_sec: 2
+ramp_factor: 0.45        # 每拍向故障目标值靠拢的比例（0.45 → 约 3~4 拍内到位）
+noise_ratio: 0.01        # 噪声 = 基线值 * noise_ratio
+
+baselines:
+  cnc:
+    spindle_temp: 45.0
+    spindle_vib: 2.0
+    spindle_load: 55.0
+    spindle_speed: 6000.0
+    feed_rate: 800.0
+    inlet_air_pressure: 0.68
+    coolant_flow: 18.0
+    status: "RUN"
+    alarm_code: ""
+  air_compressor:
+    discharge_temp: 78.0
+    outlet_pressure: 0.70
+    oil_temp: 72.0
+    motor_current: 30.0
+    load_rate: 70.0
+    run_hours: 2100.0
+    status: "RUN"
+    alarm_code: ""
+
+# 故障剧本：target 为注入后各测点的目标值
+faults:
+  - id: "spindle_overheat"
+    name: "主轴过热"
+    device_types: ["cnc"]
+    desc: "主轴温度持续升高，伴随冷却液流量下降"
+    must_trigger: [spindle_temp, coolant_flow]
+    target:
+      spindle_temp: 92.0
+      coolant_flow: 6.5
+      spindle_load: 88.0
+
+  - id: "spindle_vibration"
+    name: "主轴振动异常"
+    device_types: ["cnc"]
+    desc: "主轴振动烈度升高，声音异常"
+    must_trigger: [spindle_vib]
+    target:
+      spindle_vib: 8.6
+      spindle_load: 72.0
+
+  - id: "spindle_bearing_wear"
+    name: "主轴轴承磨损（振动并发热）"
+    device_types: ["cnc"]
+    desc: "振动与温度同时升高，声音异常且主轴发烫"
+    must_trigger: [spindle_vib, spindle_temp]
+    target:
+      spindle_vib: 8.2
+      spindle_temp: 84.0
+      spindle_load: 88.0
+
+  - id: "spindle_overload"
+    name: "主轴负载过高/闷车"
+    device_types: ["cnc"]
+    desc: "切削负载升高、进给掉速、主轴温度升高"
+    must_trigger: [spindle_load, feed_rate, spindle_speed]
+    target:
+      spindle_load: 97.0
+      feed_rate: 300.0
+      spindle_temp: 70.0
+      # 原为 5300（与额定 6000 仅偏差 11.7%，够不到 alarm 0.20 档），按剧本"掉速"语义调整为 4600（偏差 23%）
+      spindle_speed: 4600.0
+
+  - id: "coolant_low"
+    name: "冷却液不足"
+    device_types: ["cnc"]
+    desc: "冷却液流量偏低，主轴温度缓慢上升"
+    must_trigger: [coolant_flow]
+    target:
+      coolant_flow: 6.0
+      spindle_temp: 69.0
+
+  - id: "cnc_air_low"
+    name: "CNC 侧进气压力不足"
+    device_types: ["cnc"]
+    desc: "本机进气压力偏低，换刀/夹紧动作无力"
+    must_trigger: [inlet_air_pressure]
+    target:
+      inlet_air_pressure: 0.40
+
+  - id: "air_pressure_low"
+    name: "空压机出口压力不足"
+    device_types: ["air_compressor"]
+    desc: "出口压力上不去，加载率与电流升高"
+    must_trigger: [outlet_pressure]
+    target:
+      outlet_pressure: 0.42
+      load_rate: 96.0
+      motor_current: 44.0
+
+  - id: "air_overheat"
+    name: "空压机排气温度过高"
+    device_types: ["air_compressor"]
+    desc: "排气温度与油温升高"
+    must_trigger: [discharge_temp]
+    target:
+      discharge_temp: 112.0
+      oil_temp: 96.0
+      load_rate: 90.0
+
+  # 以下三个剧本为"阈值可达性自测"补齐：原配置下 oil_temp/motor_current/load_rate/run_hours
+  # 的报警档阈值与 ALM-203/204/205 无任何剧本能触发（详见 docs/SELFTEST.md 首轮结果）
+  - id: "air_oil_overheat"
+    name: "空压机润滑油温度过高"
+    device_types: ["air_compressor"]
+    desc: "油温单独升高至报警区，排气温度尚未越限，多为油品劣化或油路堵塞"
+    must_trigger: [oil_temp]
+    target:
+      oil_temp: 106.0
+      discharge_temp: 97.0
+
+  - id: "air_motor_overload"
+    name: "空压机电机过载（电流高+满载）"
+    device_types: ["air_compressor"]
+    desc: "电机电流与加载率同时越限，出口压力尚可维持，存在跳闸风险"
+    must_trigger: [motor_current, load_rate]
+    target:
+      motor_current: 52.0
+      load_rate: 99.0
+
+  - id: "air_maintenance_due"
+    name: "空压机保养周期超期"
+    device_types: ["air_compressor"]
+    desc: "累计运行小时越过保养周期，需安排换油与滤芯更换"
+    must_trigger: [run_hours]
+    target:
+      run_hours: 4150.0

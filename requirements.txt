@@ -1,0 +1,11 @@
+# 运行时最小依赖（离线可跑；以下均为纯 Python 包，安装失败也不会阻塞降级模式）
+PyYAML>=6.0,<7
+
+# 可选依赖（按需安装，代码里做了 import 缺失的自动降级）：
+#   httpx>=0.27    -> LLM HTTP 调用；未安装时自动使用标准库 urllib
+#   asyncua>=1.1   -> 真实 OPC-UA 通信（仿真服务器 + 只读客户端）；未安装时自动使用内置内存仿真数据源
+#   numpy>=1.26    -> 知识库向量检索加速；未安装时自动使用纯 Python 实现的 TF-IDF 余弦
+#
+# Web HMI（演示界面）依赖，核心诊断链路（CLI）不依赖它：
+#   fastapi>=0.110, uvicorn>=0.29 -> Web API + web/static 前端（scripts/run_web.py 启动）
+#   Excel 导出为零依赖实现（src/cncops/xlsx.py，标准库 zipfile+XML），无需 openpyxl

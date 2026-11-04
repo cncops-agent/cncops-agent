@@ -1,0 +1,187 @@
+# 空压机故障知识条目（空压机点位独立，不借用 CNC 任何节点）
+# 字段说明见 cnc.yaml 文件头（code / tools / materials / eta_min 含义相同）
+entries:
+  - id: "KB-AIR-001"
+    code: "F101"
+    title: "空压机出口压力不足"
+    device_types: ["air_compressor"]
+    alarm_codes: ["ALM-202"]
+    points: ["outlet_pressure", "load_rate", "motor_current"]
+    symptoms: ["压力上不去", "没劲儿", "压力不够", "气压低", "打不上压", "压力不足", "供气不足"]
+    base_probability: 0.9
+    conclusion: "出口压力低于阈值且加载率偏高，判定为供气能力不足或管网存在泄漏。"
+    causes:
+      - text: "管网或用气端存在泄漏，用气量超过产气量"
+        basis: "加载率已达高位但压力仍上不去"
+      - text: "进气滤芯或油气分离器堵塞"
+        basis: "电流升高且压力缓慢下降"
+      - text: "安全阀或压力开关设定漂移"
+        basis: "压力长期偏低但无明显泄漏点"
+    steps:
+      - level: "L1"
+        text: "记录出口压力、加载率与电机电流读数，确认是否多机同时用气。"
+        tools: ["设备点检表"]
+        materials: []
+        eta_min: 3
+      - level: "L1"
+        text: "沿管网听漏，重点检查接头、软管与三联件，标记疑似漏点。"
+        tools: ["听诊棒（或螺丝刀代用）", "手电筒", "标记贴纸"]
+        materials: []
+        eta_min: 20
+      - level: "L1"
+        text: "查看进气滤芯压差指示器是否进入红色区域。"
+        tools: ["手电筒"]
+        materials: []
+        eta_min: 5
+      - level: "L2"
+        text: "紧固或更换泄漏接头、软管，复测出口压力是否回升。"
+        tools: ["活动扳手", "管钳", "生料带"]
+        materials: ["同规格接头/软管", "密封件"]
+        eta_min: 40
+      - level: "L2"
+        text: "压差超限时更换进气滤芯与油气分离器滤芯。"
+        tools: ["滤芯扳手", "扭力扳手"]
+        materials: ["进气滤芯", "油气分离器滤芯"]
+        eta_min: 45
+      - level: "L3"
+        text: "压力开关与安全阀整定、机头内部检修须由工程师执行，涉及带压部件与电气柜带电检测。"
+        tools: ["工程师专用：压力校验仪、安全阀校验台", "电工仪表（需持证）"]
+        materials: ["密封件套装", "压力开关/安全阀备件（视检查结果）"]
+        eta_min: 180
+    safety:
+      - "严禁在带压状态下拆卸管路、阀门或更换滤芯，必须先停机泄压。"
+      - "安全阀整定与机头检修属于带压作业与带电作业，必须由专业工程师执行。"
+
+  - id: "KB-AIR-002"
+    code: "F102"
+    title: "空压机排气温度过高"
+    device_types: ["air_compressor"]
+    alarm_codes: ["ALM-201"]
+    points: ["discharge_temp", "oil_temp", "load_rate"]
+    symptoms: ["排气温度高", "温度高", "发烫", "高温停机", "温度报警", "过热"]
+    base_probability: 0.88
+    conclusion: "排气温度越过报警阈值，判定为冷却或油路异常，继续运行将触发高温停机。"
+    causes:
+      - text: "冷却器散热不良或环境温度过高、通风不畅"
+        basis: "油温与排气温度同步升高"
+      - text: "润滑油量不足或油品劣化"
+        basis: "油温偏高且声音发涩"
+      - text: "长期满载运行导致热累积"
+        basis: "加载率长期处于高位"
+    steps:
+      - level: "L1"
+        text: "记录排气温度、油温与加载率读数，确认机房通风与环境温度。"
+        tools: ["红外测温仪", "设备点检表"]
+        materials: []
+        eta_min: 5
+      - level: "L1"
+        text: "清理冷却器表面与机房进风口灰尘，保证散热通道畅通。"
+        tools: ["毛刷", "工业吸尘器"]
+        materials: []
+        eta_min: 25
+      - level: "L1"
+        text: "停机后按油位镜检查润滑油位是否在上下限之间。"
+        tools: ["手电筒", "不掉毛擦布"]
+        materials: []
+        eta_min: 10
+      - level: "L2"
+        text: "油位偏低时补加同牌号润滑油至标准油位，记录加注量。"
+        tools: ["漏斗", "加油桶"]
+        materials: ["空压机润滑油（规定牌号）"]
+        eta_min: 20
+      - level: "L2"
+        text: "清洗冷却器翅片与风扇滤网，复测排气温度。"
+        tools: ["翅片清洗刷", "吸尘器", "活动扳手"]
+        materials: ["翅片清洗剂"]
+        eta_min: 40
+      - level: "L3"
+        text: "仍超温需工程师检查温控阀、油路与机头，涉及高温部件与拆机作业。"
+        tools: ["工程师专用：红外测温仪、机头拆装工装", "扭矩扳手"]
+        materials: ["温控阀备件", "密封件套装", "润滑油"]
+        eta_min: 240
+    safety:
+      - "排气管道与机头表面高温，禁止徒手触碰，停机后须冷却 15 分钟以上。"
+      - "温控阀与机头检修涉及拆机与高温部件，须由专业工程师执行。"
+
+  - id: "KB-AIR-003"
+    code: "F103"
+    title: "润滑油温度过高与保养周期"
+    device_types: ["air_compressor"]
+    alarm_codes: ["ALM-203", "ALM-205"]
+    points: ["oil_temp", "run_hours"]
+    symptoms: ["油温高", "油温报警", "该保养", "到期", "换油", "运行小时", "保养"]
+    base_probability: 0.75
+    conclusion: "油温或累计运行小时越限，判定为润滑状态异常或已到保养周期。"
+    causes:
+      - text: "累计运行小时接近或超过保养周期，油品劣化"
+        basis: "运行小时读数越限"
+      - text: "冷却系统散热不足导致油温升高"
+        basis: "油温单独升高且排气温度正常"
+    steps:
+      - level: "L1"
+        text: "记录油温与累计运行小时，对照保养周期表确认是否到期。"
+        tools: ["保养周期表", "设备点检表"]
+        materials: []
+        eta_min: 5
+      - level: "L1"
+        text: "检查油位与油品颜色，出现乳化或发黑应安排换油。"
+        tools: ["手电筒", "取样瓶"]
+        materials: []
+        eta_min: 10
+      - level: "L2"
+        text: "按保养规程更换润滑油与油滤芯，更换后复位保养计时。"
+        tools: ["滤芯扳手", "接油盘", "漏斗", "扭力扳手"]
+        materials: ["空压机润滑油", "油滤芯"]
+        eta_min: 90
+      - level: "L2"
+        text: "清理冷却器与风扇滤网，复测油温。"
+        tools: ["翅片清洗刷", "吸尘器"]
+        materials: ["翅片清洗剂"]
+        eta_min: 35
+      - level: "L3"
+        text: "换油后油温仍高，需工程师检查油路与机头内部，涉及拆机作业。"
+        tools: ["工程师专用：压力表、机头拆装工装", "红外测温仪"]
+        materials: ["密封件套装", "油路管件（视检查结果）"]
+        eta_min: 240
+    safety:
+      - "换油前必须停机泄压并等待油温降至常温，防止高温油液喷溅烫伤。"
+      - "涉及机头内部检修须由专业工程师执行。"
+
+  - id: "KB-AIR-004"
+    code: "F104"
+    title: "空压机电机电流过高"
+    device_types: ["air_compressor"]
+    alarm_codes: ["ALM-204"]
+    points: ["motor_current", "load_rate"]
+    symptoms: ["电流高", "电流大", "跳闸", "过载", "电费高", "电机热"]
+    base_probability: 0.72
+    conclusion: "电机电流越过报警阈值，判定为过载或电气异常，存在跳闸风险。"
+    causes:
+      - text: "用气量长期超过产气能力导致持续满载"
+        basis: "加载率高且电流同步升高"
+      - text: "电压异常或电机接线端子松动发热"
+        basis: "电流偏高但产气量与往常相同"
+    steps:
+      - level: "L1"
+        text: "记录电机电流、加载率与出口压力，确认用气端是否有异常耗气。"
+        tools: ["设备点检表"]
+        materials: []
+        eta_min: 5
+      - level: "L1"
+        text: "检查电机外壳温度与通风口是否被遮挡，清除遮挡物。"
+        tools: ["红外测温仪", "手电筒"]
+        materials: []
+        eta_min: 10
+      - level: "L2"
+        text: "关闭非必要用气点，降低加载率后复测电流。"
+        tools: ["对讲机（协调用气点）"]
+        materials: []
+        eta_min: 15
+      - level: "L3"
+        text: "需工程师检查电机接线端子扭矩、三相电压与过载保护整定值，属于电气柜带电作业。"
+        tools: ["持证电工专用：钳形表/万用表", "扭矩螺丝刀", "绝缘手套"]
+        materials: ["接线端子（视检查结果）"]
+        eta_min: 120
+    safety:
+      - "严禁非电工打开电气柜或测量带电回路。"
+      - "电气柜内检测与保护整定属于带电作业，必须由持证电工或工程师执行。"

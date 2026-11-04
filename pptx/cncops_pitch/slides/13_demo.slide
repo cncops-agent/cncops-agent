@@ -1,0 +1,37 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 03</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>现场实操演示脚本（3 分钟）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>DEMO</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:30 }}>
+    <Box style={{ width:560, justifyContent:'center', alignItems:'center', background:'rgba(255,255,255,0.03)', borderRadius:14, border:'1px solid rgba(255,255,255,0.08)', padding:14 }}>
+      <Image src='assets/report_card.png' style={{ width:'100%', height:520, objectFit:'contain', borderRadius:10 }} />
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', justifyContent:'center', gap:18 }}>
+      <Text style={{ fontSize:20, color:'#22D3EE', fontWeight:'bold' }}>三步走一遍，你看到的就是用户看到的</Text>
+      <Box style={{ flexDirection:'row', gap:14, alignItems:'flex-start' }}>
+        <Box style={{ width:34, height:34, borderRadius:17, background:'#22D3EE', alignItems:'center', justifyContent:'center' }}><Text style={{ fontSize:18, color:'#0F1B2D', fontWeight:'bold' }}>1</Text></Box>
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.55 }}>演示模式注入 CNC-01 主轴过热 → 顶栏变红、温度 6 秒内升到 90°C+、出 ALM-101/105</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:14, alignItems:'flex-start' }}>
+        <Box style={{ width:34, height:34, borderRadius:17, background:'#22D3EE', alignItems:'center', justifyContent:'center' }}><Text style={{ fontSize:18, color:'#0F1B2D', fontWeight:'bold' }}>2</Text></Box>
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.55 }}>问"一号机发烫" → 七块报告卡（含 F001 编号角标、证据实测 vs 阈值、L1–L3 步骤）</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:14, alignItems:'flex-start' }}>
+        <Box style={{ width:34, height:34, borderRadius:17, background:'#22D3EE', alignItems:'center', justifyContent:'center' }}><Text style={{ fontSize:18, color:'#0F1B2D', fontWeight:'bold' }}>3</Text></Box>
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.55 }}>单步排查走到 L3 → 红色 LOTO 安全确认；反馈"已解决"→ 历史页看停机时长</Text>
+      </Box>
+      <Box style={{ marginTop:4, padding:'14px 16px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.5 }}>话术："这页我直接现场走一遍——你们看到的就是用户看到的。"</Text>
+      </Box>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>13 / 20</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,33 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 02</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>验收与质量保障</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>QUALITY</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'column', justifyContent:'center', gap:24 }}>
+    <Box style={{ flexDirection:'row', gap:24, justifyContent:'center' }}>
+      {[
+        {n:'82', l:'一键自测全过', d:'11 故障逐个注入断言 Top-1、6 条误报回归、37 个阈值/报警码可达性'},
+        {n:'66', l:'布局验收', d:'3/10/30 台 + 手机端行高字号不缩放，真实浏览器无头验收'},
+        {n:'27', l:'pytest 回归', d:'含 API 契约：llm_used / 原因排序数据契约'},
+      ].map((m, i) => (
+        <Box key={i} style={{ flex:1, alignItems:'center', padding:'20px 18px', background:'rgba(255,255,255,0.04)', borderRadius:14, border:'1px solid rgba(255,255,255,0.08)' }}>
+          <Text style={{ fontSize:96, color:'#22D3EE', fontWeight:'bold', lineHeight:1 }}>{m.n}</Text>
+          <Text style={{ fontSize:22, color:'#E6EEF5', fontWeight:'bold', marginTop:8 }}>{m.l}</Text>
+          <Text style={{ fontSize:14, color:'#9FB6CC', textAlign:'center', lineHeight:1.5, marginTop:8 }}>{m.d}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection:'row', alignItems:'center', gap:12, justifyContent:'center' }}>
+      <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:22, height:22 }} />
+      <Text style={{ fontSize:17, color:'#CDE6F5', lineHeight:1.5 }}>可复现、固定种子、不污染数据——评委可以当场让我重跑。</Text>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>11 / 20</Text>
+  </Box>
+</Slide>

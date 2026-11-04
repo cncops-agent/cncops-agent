@@ -1,0 +1,52 @@
+<Slide style={{ width:'1280px', height:'720px', background:'#0F1B2D', padding:0, position:'relative' }}>
+  <Box style={{ position:'absolute', top:0, left:0, right:0, height:6, background:'#22D3EE' }} />
+  <Box style={{ position:'absolute', top:26, left:60, right:60, height:60, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+    <Box style={{ flexDirection:'row', alignItems:'baseline', gap:14 }}>
+      <Text style={{ fontSize:13, color:'#22D3EE', fontWeight:'bold', letterSpacing:2 }}>PART 02</Text>
+      <Text style={{ fontSize:30, color:'#E6EEF5', fontWeight:'bold' }}>整体技术架构（分层）</Text>
+    </Box>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>ARCHITECTURE</Text>
+  </Box>
+  <Box style={{ position:'absolute', top:104, left:60, right:60, bottom:50, flexDirection:'row', gap:34 }}>
+    <Box style={{ width:720, alignItems:'center', justifyContent:'center' }}>
+      <svg width='720' height='540' viewBox='0 0 720 540'>
+        <rect x='10' y='20' width='700' height='110' rx='12' fill='#2E5C8A' />
+        <text x='30' y='62' style={{ fill:'#FFFFFF', fontSize:24, fontWeight:'bold' }}>车间 HMI</text>
+        <text x='30' y='94' style={{ fill:'#DCE9F5', fontSize:16 }}>原生 HTML/CSS/JS · 深色工业风 · 无构建步骤</text>
+        <rect x='10' y='150' width='700' height='110' rx='12' fill='#27496D' />
+        <text x='30' y='192' style={{ fill:'#FFFFFF', fontSize:24, fontWeight:'bold' }}>Web API 层</text>
+        <text x='30' y='224' style={{ fill:'#DCE9F5', fontSize:16 }}>FastAPI + uvicorn · 18 个路由</text>
+        <rect x='10' y='280' width='700' height='110' rx='12' fill='#1E3A5F' />
+        <text x='30' y='322' style={{ fill:'#FFFFFF', fontSize:24, fontWeight:'bold' }}>诊断智能体</text>
+        <text x='30' y='354' style={{ fill:'#DCE9F5', fontSize:16 }}>固定六步工作流（无需大模型也能跑）</text>
+        <rect x='10' y='410' width='700' height='110' rx='12' fill='#16314F' />
+        <text x='30' y='452' style={{ fill:'#FFFFFF', fontSize:24, fontWeight:'bold' }}>数据源 / 知识库 / 记忆库 / 大模型（可选）</text>
+        <text x='30' y='484' style={{ fill:'#9FB6CC', fontSize:16 }}>仿真器 · OPC-UA 只读 · YAML 知识库 · SQLite · OpenAI 兼容</text>
+        <text x='660' y='250' style={{ fill:'#22D3EE', fontSize:40 }}>▲</text>
+        <text x='624' y='300' style={{ fill:'#22D3EE', fontSize:15 }}>数据上行</text>
+      </svg>
+    </Box>
+    <Box style={{ flex:1, flexDirection:'column', justifyContent:'center', gap:16 }}>
+      <Text style={{ fontSize:22, color:'#E6EEF5', fontWeight:'bold' }}>一套本地，不依赖云</Text>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>前后端、数据库、知识库全部本地一套，内网/断网都能跑</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>采集层只走 OPC-UA 只读，绝无写回路</Text>
+      </Box>
+      <Box style={{ flexDirection:'row', gap:10, alignItems:'flex-start' }}>
+        <FAIcon name='check-circle' style={{ fill:'#22D3EE', width:20, height:20, marginTop:3 }} />
+        <Text style={{ fontSize:16, color:'#CDE6F5', lineHeight:1.5 }}>大模型仅为可选增强，不接也能完整出报告</Text>
+      </Box>
+      <Box style={{ marginTop:4, padding:'14px 16px', background:'rgba(46,92,138,0.18)', borderRadius:10, border:'1px solid rgba(46,92,138,0.5)' }}>
+        <Text style={{ fontSize:14, color:'#CDE6F5', lineHeight:1.5 }}>话术："后端、前端、数据库、知识库，全部本地一套，不依赖云。"</Text>
+      </Box>
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', bottom:0, left:0, right:0, height:44, flexDirection:'row', alignItems:'center', justifyContent:'space-between', paddingLeft:60, paddingRight:60, borderTop:'1px solid rgba(255,255,255,0.08)' }}>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>cncops-agent · 只读诊断</Text>
+    <Text style={{ fontSize:13, color:'#8FA3B8' }}>06 / 20</Text>
+  </Box>
+</Slide>

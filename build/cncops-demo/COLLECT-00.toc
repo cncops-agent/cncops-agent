@@ -1,0 +1,3049 @@
+([('PIL\\_avif.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_avif.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imaging.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_imaging.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingcms.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_imagingcms.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingft.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_imagingft.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingmath.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_imagingmath.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingtk.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_imagingtk.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_webp.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\PIL\\_webp.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('_asyncio.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_sqlite3.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_sqlite3.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('_zoneinfo.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\_zoneinfo.pyd',
+   'EXTENSION'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-fibers-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-fibers-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-fibers-l1-1-1.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-fibers-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-kernel32-legacy-l1-1-1.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-kernel32-legacy-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-sysinfo-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-private-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-private-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk-21.0.12\\bin\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'D:\\Factory Project\\cncops-agent\\build\\cncops-demo\\base_library.zip',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\certifi\\py.typed',
+   'DATA'),
+  ('charset_normalizer\\cd.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\charset_normalizer\\cd.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\md.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\charset_normalizer\\md.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('click-8.5.0.dist-info\\INSTALLER',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.5.0.dist-info\\METADATA',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.5.0.dist-info\\RECORD',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.5.0.dist-info\\WHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\WHEEL',
+   'DATA'),
+  ('click-8.5.0.dist-info\\licenses\\LICENSE.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('cncops-demo.exe',
+   'D:\\Factory Project\\cncops-agent\\build\\cncops-demo\\cncops-demo.exe',
+   'EXECUTABLE'),
+  ('config\\alarms.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\alarms.yaml',
+   'DATA'),
+  ('config\\devices.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\devices.yaml',
+   'DATA'),
+  ('config\\devices_10.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\devices_10.yaml',
+   'DATA'),
+  ('config\\devices_30.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\devices_30.yaml',
+   'DATA'),
+  ('config\\kb\\air.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\kb\\air.yaml',
+   'DATA'),
+  ('config\\kb\\cnc.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\kb\\cnc.yaml',
+   'DATA'),
+  ('config\\kb\\generic.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\kb\\generic.yaml',
+   'DATA'),
+  ('config\\lexicon.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\lexicon.yaml',
+   'DATA'),
+  ('config\\simulation.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\simulation.yaml',
+   'DATA'),
+  ('config\\thresholds.yaml',
+   'D:\\Factory Project\\cncops-agent\\config\\thresholds.yaml',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\METADATA',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\RECORD',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\WHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('libcrypto-3-x64.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\libcrypto-3-x64.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('libssl-3-x64.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\libssl-3-x64.dll',
+   'BINARY'),
+  ('numpy-2.5.4.dist-info\\DELVEWHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\DELVEWHEEL',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\INSTALLER',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\INSTALLER',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\METADATA',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\METADATA',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\RECORD',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\RECORD',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\REQUESTED',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\REQUESTED',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\WHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\WHEEL',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\entry_points.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\entry_points.txt',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\LICENSE.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\include\\numpy\\libdivide\\LICENSE.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\include\\numpy\\libdivide\\LICENSE.txt',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\common\\pythoncapi-compat\\COPYING',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\common\\pythoncapi-compat\\COPYING',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\highway\\LICENSE',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\highway\\LICENSE',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\multiarray\\dragon4_LICENSE.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\multiarray\\dragon4_LICENSE.txt',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\npysort\\x86-simd-sort\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\npysort\\x86-simd-sort\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\umath\\svml\\LICENSE',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\umath\\svml\\LICENSE',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\fft\\pocketfft\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\fft\\pocketfft\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\linalg\\lapack_lite\\LICENSE.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\linalg\\lapack_lite\\LICENSE.txt',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\ma\\LICENSE',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\ma\\LICENSE',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\distributions\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\distributions\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\mt19937\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\mt19937\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\pcg64\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\pcg64\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\philox\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\philox\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\sfc64\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\sfc64\\LICENSE.md',
+   'DATA'),
+  ('numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\splitmix64\\LICENSE.md',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\splitmix64\\LICENSE.md',
+   'DATA'),
+  ('numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll',
+   'BINARY'),
+  ('numpy.libs\\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy.libs\\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll',
+   'BINARY'),
+  ('numpy\\_core\\_multiarray_tests.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\_core\\_multiarray_tests.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\_core\\_multiarray_umath.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\_core\\_multiarray_umath.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\fft\\_pocketfft_umath.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\fft\\_pocketfft_umath.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\linalg\\_umath_linalg.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_bounded_integers.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_bounded_integers.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_common.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_common.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_generator.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_generator.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_mt19937.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_mt19937.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_pcg64.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_pcg64.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_philox.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_philox.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\_sfc64.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\_sfc64.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\bit_generator.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\bit_generator.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy\\random\\mtrand.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\numpy\\random\\mtrand.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('opentelemetry_api-1.45.1.dist-info\\INSTALLER',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\opentelemetry_api-1.45.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('opentelemetry_api-1.45.1.dist-info\\METADATA',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\opentelemetry_api-1.45.1.dist-info\\METADATA',
+   'DATA'),
+  ('opentelemetry_api-1.45.1.dist-info\\RECORD',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\opentelemetry_api-1.45.1.dist-info\\RECORD',
+   'DATA'),
+  ('opentelemetry_api-1.45.1.dist-info\\WHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\opentelemetry_api-1.45.1.dist-info\\WHEEL',
+   'DATA'),
+  ('opentelemetry_api-1.45.1.dist-info\\entry_points.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\opentelemetry_api-1.45.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('opentelemetry_api-1.45.1.dist-info\\licenses\\LICENSE',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\opentelemetry_api-1.45.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('pydantic-2.14.1.dist-info\\INSTALLER',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\pydantic-2.14.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('pydantic-2.14.1.dist-info\\METADATA',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\pydantic-2.14.1.dist-info\\METADATA',
+   'DATA'),
+  ('pydantic-2.14.1.dist-info\\RECORD',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\pydantic-2.14.1.dist-info\\RECORD',
+   'DATA'),
+  ('pydantic-2.14.1.dist-info\\WHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\pydantic-2.14.1.dist-info\\WHEEL',
+   'DATA'),
+  ('pydantic-2.14.1.dist-info\\licenses\\LICENSE',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\pydantic-2.14.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('pydantic_core\\_pydantic_core.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('python313.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python313.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('sqlite3.dll',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\sqlite3.dll',
+   'BINARY'),
+  ('tzdata\\zoneinfo\\Africa\\Abidjan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Abidjan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Accra',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Accra',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Addis_Ababa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Addis_Ababa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Algiers',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Algiers',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Asmara',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Asmara',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Asmera',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Asmera',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Bamako',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Bamako',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Bangui',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Bangui',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Banjul',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Banjul',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Bissau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Bissau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Blantyre',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Blantyre',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Brazzaville',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Brazzaville',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Bujumbura',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Bujumbura',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Cairo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Cairo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Casablanca',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Casablanca',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Ceuta',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Ceuta',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Conakry',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Conakry',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Dakar',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Dakar',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Dar_es_Salaam',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Dar_es_Salaam',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Djibouti',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Djibouti',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Douala',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Douala',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\El_Aaiun',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\El_Aaiun',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Freetown',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Freetown',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Gaborone',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Gaborone',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Harare',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Harare',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Johannesburg',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Johannesburg',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Juba',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Juba',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Kampala',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Kampala',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Khartoum',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Khartoum',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Kigali',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Kigali',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Kinshasa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Kinshasa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Lagos',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Lagos',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Libreville',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Libreville',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Lome',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Lome',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Luanda',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Luanda',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Lubumbashi',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Lubumbashi',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Lusaka',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Lusaka',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Malabo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Malabo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Maputo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Maputo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Maseru',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Maseru',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Mbabane',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Mbabane',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Mogadishu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Mogadishu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Monrovia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Monrovia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Nairobi',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Nairobi',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Ndjamena',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Ndjamena',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Niamey',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Niamey',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Nouakchott',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Nouakchott',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Ouagadougou',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Ouagadougou',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Porto-Novo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Porto-Novo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Sao_Tome',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Sao_Tome',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Timbuktu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Timbuktu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Tripoli',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Tripoli',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Tunis',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Tunis',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Africa\\Windhoek',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\Windhoek',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Adak',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Adak',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Anchorage',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Anchorage',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Anguilla',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Anguilla',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Antigua',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Antigua',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Araguaina',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Araguaina',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Buenos_Aires',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Buenos_Aires',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Catamarca',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Catamarca',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\ComodRivadavia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\ComodRivadavia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Cordoba',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Cordoba',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Jujuy',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Jujuy',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\La_Rioja',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\La_Rioja',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Mendoza',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Mendoza',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Rio_Gallegos',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Rio_Gallegos',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Salta',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Salta',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\San_Juan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\San_Juan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\San_Luis',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\San_Luis',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Tucuman',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Tucuman',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Argentina\\Ushuaia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\Ushuaia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Aruba',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Aruba',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Asuncion',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Asuncion',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Atikokan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Atikokan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Atka',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Atka',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Bahia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Bahia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Bahia_Banderas',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Bahia_Banderas',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Barbados',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Barbados',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Belem',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Belem',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Belize',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Belize',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Blanc-Sablon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Blanc-Sablon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Boa_Vista',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Boa_Vista',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Bogota',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Bogota',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Boise',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Boise',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Buenos_Aires',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Buenos_Aires',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Cambridge_Bay',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Cambridge_Bay',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Campo_Grande',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Campo_Grande',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Cancun',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Cancun',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Caracas',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Caracas',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Catamarca',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Catamarca',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Cayenne',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Cayenne',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Cayman',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Cayman',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Chicago',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Chicago',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Chihuahua',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Chihuahua',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Ciudad_Juarez',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Ciudad_Juarez',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Coral_Harbour',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Coral_Harbour',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Cordoba',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Cordoba',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Costa_Rica',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Costa_Rica',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Coyhaique',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Coyhaique',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Creston',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Creston',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Cuiaba',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Cuiaba',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Curacao',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Curacao',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Danmarkshavn',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Danmarkshavn',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Dawson',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Dawson',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Dawson_Creek',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Dawson_Creek',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Denver',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Denver',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Detroit',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Detroit',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Dominica',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Dominica',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Edmonton',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Edmonton',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Eirunepe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Eirunepe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\El_Salvador',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\El_Salvador',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Ensenada',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Ensenada',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Fort_Nelson',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Fort_Nelson',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Fort_Wayne',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Fort_Wayne',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Fortaleza',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Fortaleza',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Glace_Bay',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Glace_Bay',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Godthab',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Godthab',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Goose_Bay',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Goose_Bay',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Grand_Turk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Grand_Turk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Grenada',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Grenada',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Guadeloupe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Guadeloupe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Guatemala',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Guatemala',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Guayaquil',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Guayaquil',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Guyana',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Guyana',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Halifax',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Halifax',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Havana',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Havana',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Hermosillo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Hermosillo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Indianapolis',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Indianapolis',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Knox',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Knox',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Marengo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Marengo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Petersburg',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Petersburg',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Tell_City',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Tell_City',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Vevay',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Vevay',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Vincennes',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Vincennes',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indiana\\Winamac',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\Winamac',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Indianapolis',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indianapolis',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Inuvik',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Inuvik',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Iqaluit',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Iqaluit',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Jamaica',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Jamaica',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Jujuy',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Jujuy',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Juneau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Juneau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Kentucky\\Louisville',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Kentucky\\Louisville',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Kentucky\\Monticello',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Kentucky\\Monticello',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Knox_IN',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Knox_IN',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Kralendijk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Kralendijk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\La_Paz',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\La_Paz',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Lima',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Lima',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Los_Angeles',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Los_Angeles',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Louisville',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Louisville',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Lower_Princes',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Lower_Princes',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Maceio',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Maceio',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Managua',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Managua',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Manaus',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Manaus',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Marigot',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Marigot',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Martinique',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Martinique',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Matamoros',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Matamoros',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Mazatlan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Mazatlan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Mendoza',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Mendoza',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Menominee',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Menominee',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Merida',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Merida',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Metlakatla',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Metlakatla',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Mexico_City',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Mexico_City',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Miquelon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Miquelon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Moncton',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Moncton',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Monterrey',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Monterrey',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Montevideo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Montevideo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Montreal',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Montreal',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Montserrat',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Montserrat',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Nassau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Nassau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\New_York',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\New_York',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Nipigon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Nipigon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Nome',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Nome',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Noronha',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Noronha',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\North_Dakota\\Beulah',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\North_Dakota\\Beulah',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\North_Dakota\\Center',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\North_Dakota\\Center',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\North_Dakota\\New_Salem',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\North_Dakota\\New_Salem',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Nuuk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Nuuk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Ojinaga',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Ojinaga',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Panama',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Panama',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Pangnirtung',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Pangnirtung',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Paramaribo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Paramaribo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Phoenix',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Phoenix',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Port-au-Prince',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Port-au-Prince',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Port_of_Spain',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Port_of_Spain',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Porto_Acre',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Porto_Acre',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Porto_Velho',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Porto_Velho',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Puerto_Rico',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Puerto_Rico',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Punta_Arenas',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Punta_Arenas',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Rainy_River',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Rainy_River',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Rankin_Inlet',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Rankin_Inlet',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Recife',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Recife',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Regina',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Regina',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Resolute',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Resolute',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Rio_Branco',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Rio_Branco',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Rosario',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Rosario',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Santa_Isabel',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Santa_Isabel',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Santarem',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Santarem',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Santiago',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Santiago',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Santo_Domingo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Santo_Domingo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Sao_Paulo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Sao_Paulo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Scoresbysund',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Scoresbysund',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Shiprock',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Shiprock',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Sitka',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Sitka',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\St_Barthelemy',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\St_Barthelemy',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\St_Johns',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\St_Johns',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\St_Kitts',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\St_Kitts',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\St_Lucia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\St_Lucia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\St_Thomas',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\St_Thomas',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\St_Vincent',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\St_Vincent',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Swift_Current',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Swift_Current',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Tegucigalpa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Tegucigalpa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Thule',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Thule',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Thunder_Bay',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Thunder_Bay',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Tijuana',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Tijuana',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Toronto',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Toronto',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Tortola',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Tortola',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Vancouver',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Vancouver',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Virgin',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Virgin',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Whitehorse',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Whitehorse',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Winnipeg',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Winnipeg',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Yakutat',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Yakutat',
+   'DATA'),
+  ('tzdata\\zoneinfo\\America\\Yellowknife',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Yellowknife',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Casey',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Casey',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Davis',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Davis',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\DumontDUrville',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\DumontDUrville',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Macquarie',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Macquarie',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Mawson',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Mawson',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\McMurdo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\McMurdo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Palmer',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Palmer',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Rothera',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Rothera',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\South_Pole',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\South_Pole',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Syowa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Syowa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Troll',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Troll',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Antarctica\\Vostok',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\Vostok',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Arctic\\Longyearbyen',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Arctic\\Longyearbyen',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Aden',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Aden',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Almaty',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Almaty',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Amman',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Amman',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Anadyr',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Anadyr',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Aqtau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Aqtau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Aqtobe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Aqtobe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ashgabat',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ashgabat',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ashkhabad',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ashkhabad',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Atyrau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Atyrau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Baghdad',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Baghdad',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Bahrain',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Bahrain',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Baku',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Baku',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Bangkok',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Bangkok',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Barnaul',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Barnaul',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Beirut',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Beirut',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Bishkek',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Bishkek',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Brunei',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Brunei',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Calcutta',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Calcutta',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Chita',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Chita',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Choibalsan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Choibalsan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Chongqing',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Chongqing',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Chungking',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Chungking',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Colombo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Colombo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Dacca',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Dacca',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Damascus',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Damascus',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Dhaka',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Dhaka',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Dili',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Dili',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Dubai',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Dubai',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Dushanbe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Dushanbe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Famagusta',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Famagusta',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Gaza',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Gaza',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Harbin',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Harbin',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Hebron',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Hebron',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ho_Chi_Minh',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ho_Chi_Minh',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Hong_Kong',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Hong_Kong',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Hovd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Hovd',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Irkutsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Irkutsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Istanbul',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Istanbul',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Jakarta',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Jakarta',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Jayapura',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Jayapura',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Jerusalem',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Jerusalem',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kabul',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kabul',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kamchatka',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kamchatka',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Karachi',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Karachi',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kashgar',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kashgar',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kathmandu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kathmandu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Katmandu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Katmandu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Khandyga',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Khandyga',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kolkata',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kolkata',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Krasnoyarsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Krasnoyarsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kuala_Lumpur',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kuala_Lumpur',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kuching',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kuching',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Kuwait',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Kuwait',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Macao',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Macao',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Macau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Macau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Magadan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Magadan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Makassar',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Makassar',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Manila',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Manila',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Muscat',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Muscat',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Nicosia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Nicosia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Novokuznetsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Novokuznetsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Novosibirsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Novosibirsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Omsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Omsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Oral',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Oral',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Phnom_Penh',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Phnom_Penh',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Pontianak',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Pontianak',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Pyongyang',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Pyongyang',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Qatar',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Qatar',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Qostanay',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Qostanay',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Qyzylorda',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Qyzylorda',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Rangoon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Rangoon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Riyadh',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Riyadh',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Saigon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Saigon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Sakhalin',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Sakhalin',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Samarkand',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Samarkand',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Seoul',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Seoul',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Shanghai',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Shanghai',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Singapore',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Singapore',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Srednekolymsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Srednekolymsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Taipei',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Taipei',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Tashkent',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Tashkent',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Tbilisi',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Tbilisi',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Tehran',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Tehran',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Tel_Aviv',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Tel_Aviv',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Thimbu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Thimbu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Thimphu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Thimphu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Tokyo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Tokyo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Tomsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Tomsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ujung_Pandang',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ujung_Pandang',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ulaanbaatar',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ulaanbaatar',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ulan_Bator',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ulan_Bator',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Urumqi',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Urumqi',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Ust-Nera',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Ust-Nera',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Vientiane',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Vientiane',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Vladivostok',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Vladivostok',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Yakutsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Yakutsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Yangon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Yangon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Yekaterinburg',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Yekaterinburg',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Asia\\Yerevan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\Yerevan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Azores',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Azores',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Bermuda',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Bermuda',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Canary',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Canary',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Cape_Verde',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Cape_Verde',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Faeroe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Faeroe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Faroe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Faroe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Jan_Mayen',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Jan_Mayen',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Madeira',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Madeira',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Reykjavik',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Reykjavik',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\South_Georgia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\South_Georgia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\St_Helena',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\St_Helena',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Atlantic\\Stanley',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\Stanley',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\ACT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\ACT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Adelaide',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Adelaide',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Brisbane',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Brisbane',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Broken_Hill',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Broken_Hill',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Canberra',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Canberra',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Currie',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Currie',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Darwin',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Darwin',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Eucla',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Eucla',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Hobart',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Hobart',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\LHI',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\LHI',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Lindeman',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Lindeman',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Lord_Howe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Lord_Howe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Melbourne',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Melbourne',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\NSW',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\NSW',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\North',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\North',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Perth',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Perth',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Queensland',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Queensland',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\South',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\South',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Sydney',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Sydney',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Tasmania',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Tasmania',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Victoria',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Victoria',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\West',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\West',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Australia\\Yancowinna',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\Yancowinna',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Brazil\\Acre',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Brazil\\Acre',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Brazil\\DeNoronha',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Brazil\\DeNoronha',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Brazil\\East',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Brazil\\East',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Brazil\\West',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Brazil\\West',
+   'DATA'),
+  ('tzdata\\zoneinfo\\CET',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\CET',
+   'DATA'),
+  ('tzdata\\zoneinfo\\CST6CDT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\CST6CDT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Atlantic',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Atlantic',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Central',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Central',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Eastern',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Eastern',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Mountain',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Mountain',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Newfoundland',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Newfoundland',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Pacific',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Pacific',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Saskatchewan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Saskatchewan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Canada\\Yukon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\Yukon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Chile\\Continental',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Chile\\Continental',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Chile\\EasterIsland',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Chile\\EasterIsland',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Cuba',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Cuba',
+   'DATA'),
+  ('tzdata\\zoneinfo\\EET',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\EET',
+   'DATA'),
+  ('tzdata\\zoneinfo\\EST',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\EST',
+   'DATA'),
+  ('tzdata\\zoneinfo\\EST5EDT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\EST5EDT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Egypt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Egypt',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Eire',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Eire',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+0',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+0',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+1',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+1',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+10',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+10',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+11',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+11',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+12',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+12',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+2',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+2',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+3',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+3',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+4',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+4',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+5',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+5',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+6',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+6',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+7',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+7',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+8',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+8',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT+9',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT+9',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-0',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-0',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-1',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-1',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-10',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-10',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-11',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-11',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-12',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-12',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-13',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-13',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-14',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-14',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-2',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-2',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-3',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-3',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-4',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-4',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-5',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-5',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-6',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-6',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-7',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-7',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-8',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-8',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT-9',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT-9',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\GMT0',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\GMT0',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\Greenwich',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\Greenwich',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\UCT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\UCT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\UTC',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\UTC',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\Universal',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\Universal',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Etc\\Zulu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\Zulu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Amsterdam',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Amsterdam',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Andorra',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Andorra',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Astrakhan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Astrakhan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Athens',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Athens',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Belfast',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Belfast',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Belgrade',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Belgrade',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Berlin',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Berlin',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Bratislava',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Bratislava',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Brussels',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Brussels',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Bucharest',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Bucharest',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Budapest',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Budapest',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Busingen',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Busingen',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Chisinau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Chisinau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Copenhagen',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Copenhagen',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Dublin',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Dublin',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Gibraltar',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Gibraltar',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Guernsey',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Guernsey',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Helsinki',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Helsinki',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Isle_of_Man',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Isle_of_Man',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Istanbul',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Istanbul',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Jersey',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Jersey',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Kaliningrad',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Kaliningrad',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Kiev',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Kiev',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Kirov',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Kirov',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Kyiv',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Kyiv',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Lisbon',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Lisbon',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Ljubljana',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Ljubljana',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\London',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\London',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Luxembourg',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Luxembourg',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Madrid',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Madrid',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Malta',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Malta',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Mariehamn',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Mariehamn',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Minsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Minsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Monaco',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Monaco',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Moscow',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Moscow',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Nicosia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Nicosia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Oslo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Oslo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Paris',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Paris',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Podgorica',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Podgorica',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Prague',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Prague',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Riga',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Riga',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Rome',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Rome',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Samara',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Samara',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\San_Marino',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\San_Marino',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Sarajevo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Sarajevo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Saratov',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Saratov',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Simferopol',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Simferopol',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Skopje',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Skopje',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Sofia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Sofia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Stockholm',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Stockholm',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Tallinn',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Tallinn',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Tirane',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Tirane',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Tiraspol',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Tiraspol',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Ulyanovsk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Ulyanovsk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Uzhgorod',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Uzhgorod',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Vaduz',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Vaduz',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Vatican',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Vatican',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Vienna',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Vienna',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Vilnius',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Vilnius',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Volgograd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Volgograd',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Warsaw',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Warsaw',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Zagreb',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Zagreb',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Zaporozhye',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Zaporozhye',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Europe\\Zurich',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\Zurich',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Factory',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Factory',
+   'DATA'),
+  ('tzdata\\zoneinfo\\GB',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\GB',
+   'DATA'),
+  ('tzdata\\zoneinfo\\GB-Eire',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\GB-Eire',
+   'DATA'),
+  ('tzdata\\zoneinfo\\GMT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\GMT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\GMT+0',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\GMT+0',
+   'DATA'),
+  ('tzdata\\zoneinfo\\GMT-0',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\GMT-0',
+   'DATA'),
+  ('tzdata\\zoneinfo\\GMT0',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\GMT0',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Greenwich',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Greenwich',
+   'DATA'),
+  ('tzdata\\zoneinfo\\HST',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\HST',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Hongkong',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Hongkong',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Iceland',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Iceland',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Antananarivo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Antananarivo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Chagos',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Chagos',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Christmas',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Christmas',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Cocos',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Cocos',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Comoro',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Comoro',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Kerguelen',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Kerguelen',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Mahe',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Mahe',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Maldives',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Maldives',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Mauritius',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Mauritius',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Mayotte',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Mayotte',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Indian\\Reunion',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\Reunion',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Iran',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Iran',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Israel',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Israel',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Jamaica',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Jamaica',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Japan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Japan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Kwajalein',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Kwajalein',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Libya',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Libya',
+   'DATA'),
+  ('tzdata\\zoneinfo\\MET',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\MET',
+   'DATA'),
+  ('tzdata\\zoneinfo\\MST',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\MST',
+   'DATA'),
+  ('tzdata\\zoneinfo\\MST7MDT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\MST7MDT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Mexico\\BajaNorte',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Mexico\\BajaNorte',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Mexico\\BajaSur',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Mexico\\BajaSur',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Mexico\\General',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Mexico\\General',
+   'DATA'),
+  ('tzdata\\zoneinfo\\NZ',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\NZ',
+   'DATA'),
+  ('tzdata\\zoneinfo\\NZ-CHAT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\NZ-CHAT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Navajo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Navajo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\PRC',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\PRC',
+   'DATA'),
+  ('tzdata\\zoneinfo\\PST8PDT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\PST8PDT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Apia',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Apia',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Auckland',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Auckland',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Bougainville',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Bougainville',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Chatham',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Chatham',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Chuuk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Chuuk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Easter',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Easter',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Efate',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Efate',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Enderbury',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Enderbury',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Fakaofo',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Fakaofo',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Fiji',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Fiji',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Funafuti',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Funafuti',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Galapagos',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Galapagos',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Gambier',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Gambier',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Guadalcanal',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Guadalcanal',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Guam',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Guam',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Honolulu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Honolulu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Johnston',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Johnston',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Kanton',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Kanton',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Kiritimati',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Kiritimati',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Kosrae',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Kosrae',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Kwajalein',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Kwajalein',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Majuro',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Majuro',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Marquesas',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Marquesas',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Midway',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Midway',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Nauru',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Nauru',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Niue',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Niue',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Norfolk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Norfolk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Noumea',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Noumea',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Pago_Pago',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Pago_Pago',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Palau',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Palau',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Pitcairn',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Pitcairn',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Pohnpei',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Pohnpei',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Ponape',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Ponape',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Port_Moresby',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Port_Moresby',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Rarotonga',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Rarotonga',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Saipan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Saipan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Samoa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Samoa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Tahiti',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Tahiti',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Tarawa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Tarawa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Tongatapu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Tongatapu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Truk',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Truk',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Wake',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Wake',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Wallis',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Wallis',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Pacific\\Yap',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\Yap',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Poland',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Poland',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Portugal',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Portugal',
+   'DATA'),
+  ('tzdata\\zoneinfo\\ROC',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\ROC',
+   'DATA'),
+  ('tzdata\\zoneinfo\\ROK',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\ROK',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Singapore',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Singapore',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Turkey',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Turkey',
+   'DATA'),
+  ('tzdata\\zoneinfo\\UCT',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\UCT',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Alaska',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Alaska',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Aleutian',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Aleutian',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Arizona',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Arizona',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Central',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Central',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\East-Indiana',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\East-Indiana',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Eastern',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Eastern',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Hawaii',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Hawaii',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Indiana-Starke',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Indiana-Starke',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Michigan',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Michigan',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Mountain',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Mountain',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Pacific',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Pacific',
+   'DATA'),
+  ('tzdata\\zoneinfo\\US\\Samoa',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\Samoa',
+   'DATA'),
+  ('tzdata\\zoneinfo\\UTC',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\UTC',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Universal',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Universal',
+   'DATA'),
+  ('tzdata\\zoneinfo\\W-SU',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\W-SU',
+   'DATA'),
+  ('tzdata\\zoneinfo\\WET',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\WET',
+   'DATA'),
+  ('tzdata\\zoneinfo\\Zulu',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Zulu',
+   'DATA'),
+  ('tzdata\\zoneinfo\\iso3166.tab',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\iso3166.tab',
+   'DATA'),
+  ('tzdata\\zoneinfo\\leapseconds',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\leapseconds',
+   'DATA'),
+  ('tzdata\\zoneinfo\\tzdata.zi',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\tzdata.zi',
+   'DATA'),
+  ('tzdata\\zoneinfo\\zone.tab',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\zone.tab',
+   'DATA'),
+  ('tzdata\\zoneinfo\\zone1970.tab',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\zone1970.tab',
+   'DATA'),
+  ('tzdata\\zoneinfo\\zonenow.tab',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\zonenow.tab',
+   'DATA'),
+  ('tzdata\\zones',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\tzdata\\zones',
+   'DATA'),
+  ('ucrtbase.dll',
+   'C:\\Program Files\\Java\\jdk-21.0.12\\bin\\ucrtbase.dll',
+   'BINARY'),
+  ('unicodedata.pyd',
+   'C:\\Users\\312\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('web\\static\\css\\app.css',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\css\\app.css',
+   'DATA'),
+  ('web\\static\\index.html',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\index.html',
+   'DATA'),
+  ('web\\static\\js\\api.js',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\js\\api.js',
+   'DATA'),
+  ('web\\static\\js\\app.js',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\js\\app.js',
+   'DATA'),
+  ('web\\static\\js\\history.js',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\js\\history.js',
+   'DATA'),
+  ('web\\static\\js\\insights.js',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\js\\insights.js',
+   'DATA'),
+  ('web\\static\\js\\ui.js',
+   'D:\\Factory Project\\cncops-agent\\web\\static\\js\\ui.js',
+   'DATA'),
+  ('websockets-17.2.dist-info\\INSTALLER',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('websockets-17.2.dist-info\\METADATA',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\METADATA',
+   'DATA'),
+  ('websockets-17.2.dist-info\\RECORD',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\RECORD',
+   'DATA'),
+  ('websockets-17.2.dist-info\\WHEEL',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\WHEEL',
+   'DATA'),
+  ('websockets-17.2.dist-info\\entry_points.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\entry_points.txt',
+   'DATA'),
+  ('websockets-17.2.dist-info\\licenses\\LICENSE',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('websockets-17.2.dist-info\\top_level.txt',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets-17.2.dist-info\\top_level.txt',
+   'DATA'),
+  ('websockets\\speedups.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\websockets\\speedups.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('yaml\\_yaml.cp313-win_amd64.pyd',
+   'D:\\Factory '
+   'Project\\cncops-agent\\.venv\\Lib\\site-packages\\yaml\\_yaml.cp313-win_amd64.pyd',
+   'EXTENSION')],)
